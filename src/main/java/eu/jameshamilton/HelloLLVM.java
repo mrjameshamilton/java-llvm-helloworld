@@ -1,13 +1,24 @@
 package eu.jameshamilton;
 
 import java.lang.foreign.Arena;
+import java.lang.foreign.FunctionDescriptor;
+import java.lang.foreign.Linker;
 
 import static eu.jameshamilton.llvm.LLVM.LLVMAppendBasicBlock;
 import static eu.jameshamilton.llvm.LLVM.LLVMBuildCall2;
 import static eu.jameshamilton.llvm.LLVM.LLVMBuildGlobalStringPtr;
 import static eu.jameshamilton.llvm.LLVM.LLVMBuildRet;
 import static eu.jameshamilton.llvm.LLVM.LLVMCreateBuilder;
+import static eu.jameshamilton.llvm.LLVM.LLVMCreateJITCompilerForModule;
 import static eu.jameshamilton.llvm.LLVM.LLVMDisposeBuilder;
+import static eu.jameshamilton.llvm.LLVM.LLVMGetDefaultTargetTriple;
+import static eu.jameshamilton.llvm.LLVM.LLVMGetPointerToGlobal;
+import static eu.jameshamilton.llvm.LLVM.LLVMInitializeX86AsmParser;
+import static eu.jameshamilton.llvm.LLVM.LLVMInitializeX86AsmPrinter;
+import static eu.jameshamilton.llvm.LLVM.LLVMInitializeX86Target;
+import static eu.jameshamilton.llvm.LLVM.LLVMInitializeX86TargetInfo;
+import static eu.jameshamilton.llvm.LLVM.LLVMInitializeX86TargetMC;
+import static eu.jameshamilton.llvm.LLVM.LLVMLinkInMCJIT;
 import static eu.jameshamilton.llvm.LLVM.LLVMPositionBuilderAtEnd;
 import static eu.jameshamilton.llvm.LLVM_1.LLVMAddFunction;
 import static eu.jameshamilton.llvm.LLVM_1.LLVMConstInt;
@@ -22,10 +33,25 @@ import static eu.jameshamilton.llvm.LLVM_1.LLVMPrintModuleToFile;
 import static eu.jameshamilton.llvm.LLVM_1.LLVMPrintModuleToString;
 import static java.lang.foreign.MemorySegment.NULL;
 import static java.lang.foreign.ValueLayout.ADDRESS;
+import static java.lang.foreign.ValueLayout.JAVA_INT;
 
 public class HelloLLVM {
     void main() {
         try (Arena arena = Arena.ofConfined()) {
+            // Initialize LLVM
+            LLVMLinkInMCJIT();
+
+            var targetTriple = LLVMGetDefaultTargetTriple().getString(0);
+            if (targetTriple.startsWith("x86")) {
+                LLVMInitializeX86Target();
+                LLVMInitializeX86TargetInfo();
+                LLVMInitializeX86TargetMC();
+                LLVMInitializeX86AsmPrinter();
+                LLVMInitializeX86AsmParser();
+            } else {
+                throw new RuntimeException("Unsupported target: " + targetTriple);
+            }
+
             var module = LLVMModuleCreateWithName(arena.allocateFrom("hello"));
 
             // Create main function signature: int main()
@@ -69,26 +95,47 @@ public class HelloLLVM {
                 LLVMDisposeMessage(llvmIrCharPtr);
             }
 
-            // Write LLVM IR to file
-            var errorMsgPtrPtr = arena.allocate(ADDRESS);
-            var printToFileResult = LLVMPrintModuleToFile(module,
-                arena.allocateFrom("helloworld.ll"),
-                errorMsgPtrPtr);
+            // Create JIT execution engine
+            var jitCompiler = arena.allocate(ADDRESS);
+            var jitErrorMsgPtrPtr = arena.allocate(ADDRESS);
+            int createJitResult = LLVMCreateJITCompilerForModule(jitCompiler, module, 2, jitErrorMsgPtrPtr);
 
-            if (printToFileResult != 0) {
-                var errorMsgPtr = errorMsgPtrPtr.get(ADDRESS, 0);
+            if (createJitResult != 0) {
+                var errorMsgPtr = jitErrorMsgPtrPtr.get(ADDRESS, 0);
                 if (errorMsgPtr.address() != 0) {
                     try {
                         var boundedErrorPtr = errorMsgPtr.reinterpret(256);
-                        System.err.println("Failed to write LLVM IR file: " + boundedErrorPtr.getString(0));
+                        System.err.println("Failed to create JIT: " + boundedErrorPtr.getString(0));
                     } catch (Exception e) {
-                        System.err.println("Failed to write LLVM IR file: failed to get error message: " + e.getMessage());
+                        System.err.println("Failed to create JIT: failed to get error message: " + e.getMessage());
                     } finally {
                         LLVMDisposeMessage(errorMsgPtr);
                     }
                 } else {
-                    System.err.println("Failed to write LLVM IR file");
+                    System.err.println("JIT creation failed");
                 }
+
+                // Clean up LLVM resources
+                LLVMDisposeBuilder(builder);
+                LLVMDisposeModule(module);
+                return;
+            }
+
+            var executionEngine = jitCompiler.get(ADDRESS, 0);
+
+            // Create method handle to the int main() function that
+            // we just created and compiled.
+            var functionHandle = Linker.nativeLinker().downcallHandle(
+                LLVMGetPointerToGlobal(executionEngine, mainFunc),
+                FunctionDescriptor.of(/* returnType = */ JAVA_INT)
+            );
+
+            // Execute the main function via the method handle.
+            try {
+                int result = (int) functionHandle.invoke();
+                System.out.println("main() returned: " + result);
+            } catch (Throwable e) {
+                System.err.println("Error calling JIT function: " + e.getMessage());
             }
 
             // Clean up LLVM resources

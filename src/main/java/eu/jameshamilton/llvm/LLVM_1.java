@@ -879,6 +879,375 @@ public class LLVM_1 {
     public static int __have_pthread_attr_t() {
         return __have_pthread_attr_t;
     }
+    private static final int LLVM_ENABLE_THREADS = (int)1L;
+    /**
+     * {@snippet lang=c :
+     * #define LLVM_ENABLE_THREADS 1
+     * }
+     */
+    public static int LLVM_ENABLE_THREADS() {
+        return LLVM_ENABLE_THREADS;
+    }
+    private static final int LLVM_HAS_ATOMICS = (int)1L;
+    /**
+     * {@snippet lang=c :
+     * #define LLVM_HAS_ATOMICS 1
+     * }
+     */
+    public static int LLVM_HAS_ATOMICS() {
+        return LLVM_HAS_ATOMICS;
+    }
+    private static final int LLVM_HAS_AARCH64_TARGET = (int)1L;
+    /**
+     * {@snippet lang=c :
+     * #define LLVM_HAS_AARCH64_TARGET 1
+     * }
+     */
+    public static int LLVM_HAS_AARCH64_TARGET() {
+        return LLVM_HAS_AARCH64_TARGET;
+    }
+    private static final int LLVM_HAS_AMDGPU_TARGET = (int)1L;
+    /**
+     * {@snippet lang=c :
+     * #define LLVM_HAS_AMDGPU_TARGET 1
+     * }
+     */
+    public static int LLVM_HAS_AMDGPU_TARGET() {
+        return LLVM_HAS_AMDGPU_TARGET;
+    }
+    private static final int LLVM_HAS_ARC_TARGET = (int)0L;
+    /**
+     * {@snippet lang=c :
+     * #define LLVM_HAS_ARC_TARGET 0
+     * }
+     */
+    public static int LLVM_HAS_ARC_TARGET() {
+        return LLVM_HAS_ARC_TARGET;
+    }
+    private static final int LLVM_HAS_ARM_TARGET = (int)1L;
+    /**
+     * {@snippet lang=c :
+     * #define LLVM_HAS_ARM_TARGET 1
+     * }
+     */
+    public static int LLVM_HAS_ARM_TARGET() {
+        return LLVM_HAS_ARM_TARGET;
+    }
+    private static final int LLVM_HAS_AVR_TARGET = (int)1L;
+    /**
+     * {@snippet lang=c :
+     * #define LLVM_HAS_AVR_TARGET 1
+     * }
+     */
+    public static int LLVM_HAS_AVR_TARGET() {
+        return LLVM_HAS_AVR_TARGET;
+    }
+    private static final int LLVM_HAS_BPF_TARGET = (int)1L;
+    /**
+     * {@snippet lang=c :
+     * #define LLVM_HAS_BPF_TARGET 1
+     * }
+     */
+    public static int LLVM_HAS_BPF_TARGET() {
+        return LLVM_HAS_BPF_TARGET;
+    }
+    private static final int LLVM_HAS_CSKY_TARGET = (int)0L;
+    /**
+     * {@snippet lang=c :
+     * #define LLVM_HAS_CSKY_TARGET 0
+     * }
+     */
+    public static int LLVM_HAS_CSKY_TARGET() {
+        return LLVM_HAS_CSKY_TARGET;
+    }
+    private static final int LLVM_HAS_DIRECTX_TARGET = (int)0L;
+    /**
+     * {@snippet lang=c :
+     * #define LLVM_HAS_DIRECTX_TARGET 0
+     * }
+     */
+    public static int LLVM_HAS_DIRECTX_TARGET() {
+        return LLVM_HAS_DIRECTX_TARGET;
+    }
+    private static final int LLVM_HAS_HEXAGON_TARGET = (int)1L;
+    /**
+     * {@snippet lang=c :
+     * #define LLVM_HAS_HEXAGON_TARGET 1
+     * }
+     */
+    public static int LLVM_HAS_HEXAGON_TARGET() {
+        return LLVM_HAS_HEXAGON_TARGET;
+    }
+    private static final int LLVM_HAS_LANAI_TARGET = (int)1L;
+    /**
+     * {@snippet lang=c :
+     * #define LLVM_HAS_LANAI_TARGET 1
+     * }
+     */
+    public static int LLVM_HAS_LANAI_TARGET() {
+        return LLVM_HAS_LANAI_TARGET;
+    }
+    private static final int LLVM_HAS_LOONGARCH_TARGET = (int)1L;
+    /**
+     * {@snippet lang=c :
+     * #define LLVM_HAS_LOONGARCH_TARGET 1
+     * }
+     */
+    public static int LLVM_HAS_LOONGARCH_TARGET() {
+        return LLVM_HAS_LOONGARCH_TARGET;
+    }
+    private static final int LLVM_HAS_M68K_TARGET = (int)1L;
+    /**
+     * {@snippet lang=c :
+     * #define LLVM_HAS_M68K_TARGET 1
+     * }
+     */
+    public static int LLVM_HAS_M68K_TARGET() {
+        return LLVM_HAS_M68K_TARGET;
+    }
+    private static final int LLVM_HAS_MIPS_TARGET = (int)1L;
+    /**
+     * {@snippet lang=c :
+     * #define LLVM_HAS_MIPS_TARGET 1
+     * }
+     */
+    public static int LLVM_HAS_MIPS_TARGET() {
+        return LLVM_HAS_MIPS_TARGET;
+    }
+    private static final int LLVM_HAS_MSP430_TARGET = (int)1L;
+    /**
+     * {@snippet lang=c :
+     * #define LLVM_HAS_MSP430_TARGET 1
+     * }
+     */
+    public static int LLVM_HAS_MSP430_TARGET() {
+        return LLVM_HAS_MSP430_TARGET;
+    }
+    private static final int LLVM_HAS_NVPTX_TARGET = (int)1L;
+    /**
+     * {@snippet lang=c :
+     * #define LLVM_HAS_NVPTX_TARGET 1
+     * }
+     */
+    public static int LLVM_HAS_NVPTX_TARGET() {
+        return LLVM_HAS_NVPTX_TARGET;
+    }
+    private static final int LLVM_HAS_POWERPC_TARGET = (int)1L;
+    /**
+     * {@snippet lang=c :
+     * #define LLVM_HAS_POWERPC_TARGET 1
+     * }
+     */
+    public static int LLVM_HAS_POWERPC_TARGET() {
+        return LLVM_HAS_POWERPC_TARGET;
+    }
+    private static final int LLVM_HAS_RISCV_TARGET = (int)1L;
+    /**
+     * {@snippet lang=c :
+     * #define LLVM_HAS_RISCV_TARGET 1
+     * }
+     */
+    public static int LLVM_HAS_RISCV_TARGET() {
+        return LLVM_HAS_RISCV_TARGET;
+    }
+    private static final int LLVM_HAS_SPARC_TARGET = (int)1L;
+    /**
+     * {@snippet lang=c :
+     * #define LLVM_HAS_SPARC_TARGET 1
+     * }
+     */
+    public static int LLVM_HAS_SPARC_TARGET() {
+        return LLVM_HAS_SPARC_TARGET;
+    }
+    private static final int LLVM_HAS_SPIRV_TARGET = (int)0L;
+    /**
+     * {@snippet lang=c :
+     * #define LLVM_HAS_SPIRV_TARGET 0
+     * }
+     */
+    public static int LLVM_HAS_SPIRV_TARGET() {
+        return LLVM_HAS_SPIRV_TARGET;
+    }
+    private static final int LLVM_HAS_SYSTEMZ_TARGET = (int)1L;
+    /**
+     * {@snippet lang=c :
+     * #define LLVM_HAS_SYSTEMZ_TARGET 1
+     * }
+     */
+    public static int LLVM_HAS_SYSTEMZ_TARGET() {
+        return LLVM_HAS_SYSTEMZ_TARGET;
+    }
+    private static final int LLVM_HAS_VE_TARGET = (int)1L;
+    /**
+     * {@snippet lang=c :
+     * #define LLVM_HAS_VE_TARGET 1
+     * }
+     */
+    public static int LLVM_HAS_VE_TARGET() {
+        return LLVM_HAS_VE_TARGET;
+    }
+    private static final int LLVM_HAS_WEBASSEMBLY_TARGET = (int)1L;
+    /**
+     * {@snippet lang=c :
+     * #define LLVM_HAS_WEBASSEMBLY_TARGET 1
+     * }
+     */
+    public static int LLVM_HAS_WEBASSEMBLY_TARGET() {
+        return LLVM_HAS_WEBASSEMBLY_TARGET;
+    }
+    private static final int LLVM_HAS_X86_TARGET = (int)1L;
+    /**
+     * {@snippet lang=c :
+     * #define LLVM_HAS_X86_TARGET 1
+     * }
+     */
+    public static int LLVM_HAS_X86_TARGET() {
+        return LLVM_HAS_X86_TARGET;
+    }
+    private static final int LLVM_HAS_XCORE_TARGET = (int)1L;
+    /**
+     * {@snippet lang=c :
+     * #define LLVM_HAS_XCORE_TARGET 1
+     * }
+     */
+    public static int LLVM_HAS_XCORE_TARGET() {
+        return LLVM_HAS_XCORE_TARGET;
+    }
+    private static final int LLVM_HAS_XTENSA_TARGET = (int)1L;
+    /**
+     * {@snippet lang=c :
+     * #define LLVM_HAS_XTENSA_TARGET 1
+     * }
+     */
+    public static int LLVM_HAS_XTENSA_TARGET() {
+        return LLVM_HAS_XTENSA_TARGET;
+    }
+    private static final int LLVM_ON_UNIX = (int)1L;
+    /**
+     * {@snippet lang=c :
+     * #define LLVM_ON_UNIX 1
+     * }
+     */
+    public static int LLVM_ON_UNIX() {
+        return LLVM_ON_UNIX;
+    }
+    private static final int LLVM_USE_INTEL_JITEVENTS = (int)0L;
+    /**
+     * {@snippet lang=c :
+     * #define LLVM_USE_INTEL_JITEVENTS 0
+     * }
+     */
+    public static int LLVM_USE_INTEL_JITEVENTS() {
+        return LLVM_USE_INTEL_JITEVENTS;
+    }
+    private static final int LLVM_USE_OPROFILE = (int)0L;
+    /**
+     * {@snippet lang=c :
+     * #define LLVM_USE_OPROFILE 0
+     * }
+     */
+    public static int LLVM_USE_OPROFILE() {
+        return LLVM_USE_OPROFILE;
+    }
+    private static final int LLVM_USE_PERF = (int)1L;
+    /**
+     * {@snippet lang=c :
+     * #define LLVM_USE_PERF 1
+     * }
+     */
+    public static int LLVM_USE_PERF() {
+        return LLVM_USE_PERF;
+    }
+    private static final int LLVM_VERSION_MAJOR = (int)20L;
+    /**
+     * {@snippet lang=c :
+     * #define LLVM_VERSION_MAJOR 20
+     * }
+     */
+    public static int LLVM_VERSION_MAJOR() {
+        return LLVM_VERSION_MAJOR;
+    }
+    private static final int LLVM_VERSION_MINOR = (int)0L;
+    /**
+     * {@snippet lang=c :
+     * #define LLVM_VERSION_MINOR 0
+     * }
+     */
+    public static int LLVM_VERSION_MINOR() {
+        return LLVM_VERSION_MINOR;
+    }
+    private static final int LLVM_VERSION_PATCH = (int)0L;
+    /**
+     * {@snippet lang=c :
+     * #define LLVM_VERSION_PATCH 0
+     * }
+     */
+    public static int LLVM_VERSION_PATCH() {
+        return LLVM_VERSION_PATCH;
+    }
+    private static final int LLVM_FORCE_ENABLE_STATS = (int)0L;
+    /**
+     * {@snippet lang=c :
+     * #define LLVM_FORCE_ENABLE_STATS 0
+     * }
+     */
+    public static int LLVM_FORCE_ENABLE_STATS() {
+        return LLVM_FORCE_ENABLE_STATS;
+    }
+    private static final int LLVM_ENABLE_CURL = (int)1L;
+    /**
+     * {@snippet lang=c :
+     * #define LLVM_ENABLE_CURL 1
+     * }
+     */
+    public static int LLVM_ENABLE_CURL() {
+        return LLVM_ENABLE_CURL;
+    }
+    private static final int LLVM_ENABLE_ZLIB = (int)1L;
+    /**
+     * {@snippet lang=c :
+     * #define LLVM_ENABLE_ZLIB 1
+     * }
+     */
+    public static int LLVM_ENABLE_ZLIB() {
+        return LLVM_ENABLE_ZLIB;
+    }
+    private static final int LLVM_ENABLE_ZSTD = (int)1L;
+    /**
+     * {@snippet lang=c :
+     * #define LLVM_ENABLE_ZSTD 1
+     * }
+     */
+    public static int LLVM_ENABLE_ZSTD() {
+        return LLVM_ENABLE_ZSTD;
+    }
+    private static final int HAVE_SYSEXITS_H = (int)1L;
+    /**
+     * {@snippet lang=c :
+     * #define HAVE_SYSEXITS_H 1
+     * }
+     */
+    public static int HAVE_SYSEXITS_H() {
+        return HAVE_SYSEXITS_H;
+    }
+    private static final int LLVM_UNREACHABLE_OPTIMIZE = (int)1L;
+    /**
+     * {@snippet lang=c :
+     * #define LLVM_UNREACHABLE_OPTIMIZE 1
+     * }
+     */
+    public static int LLVM_UNREACHABLE_OPTIMIZE() {
+        return LLVM_UNREACHABLE_OPTIMIZE;
+    }
+    private static final int LLVM_ENABLE_DIA_SDK = (int)0L;
+    /**
+     * {@snippet lang=c :
+     * #define LLVM_ENABLE_DIA_SDK 0
+     * }
+     */
+    public static int LLVM_ENABLE_DIA_SDK() {
+        return LLVM_ENABLE_DIA_SDK;
+    }
 
     private static class LLVMInstallFatalErrorHandler {
         public static final FunctionDescriptor DESC = FunctionDescriptor.ofVoid(
@@ -29796,2417 +30165,6 @@ public class LLVM_1 {
                 traceDowncall("LLVMSetPrologueData", Fn, prologueData);
             }
             mh$.invokeExact(Fn, prologueData);
-        } catch (Throwable ex$) {
-           throw new AssertionError("should not reach here", ex$);
-        }
-    }
-
-    private static class LLVMAddAttributeAtIndex {
-        public static final FunctionDescriptor DESC = FunctionDescriptor.ofVoid(
-            LLVM.C_POINTER,
-            LLVM.C_INT,
-            LLVM.C_POINTER
-        );
-
-        public static final MemorySegment ADDR = LLVM.findOrThrow("LLVMAddAttributeAtIndex");
-
-        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
-    }
-
-    /**
-     * Function descriptor for:
-     * {@snippet lang=c :
-     * void LLVMAddAttributeAtIndex(LLVMValueRef F, LLVMAttributeIndex Idx, LLVMAttributeRef A)
-     * }
-     */
-    public static FunctionDescriptor LLVMAddAttributeAtIndex$descriptor() {
-        return LLVMAddAttributeAtIndex.DESC;
-    }
-
-    /**
-     * Downcall method handle for:
-     * {@snippet lang=c :
-     * void LLVMAddAttributeAtIndex(LLVMValueRef F, LLVMAttributeIndex Idx, LLVMAttributeRef A)
-     * }
-     */
-    public static MethodHandle LLVMAddAttributeAtIndex$handle() {
-        return LLVMAddAttributeAtIndex.HANDLE;
-    }
-
-    /**
-     * Address for:
-     * {@snippet lang=c :
-     * void LLVMAddAttributeAtIndex(LLVMValueRef F, LLVMAttributeIndex Idx, LLVMAttributeRef A)
-     * }
-     */
-    public static MemorySegment LLVMAddAttributeAtIndex$address() {
-        return LLVMAddAttributeAtIndex.ADDR;
-    }
-
-    /**
-     * {@snippet lang=c :
-     * void LLVMAddAttributeAtIndex(LLVMValueRef F, LLVMAttributeIndex Idx, LLVMAttributeRef A)
-     * }
-     */
-    public static void LLVMAddAttributeAtIndex(MemorySegment F, int Idx, MemorySegment A) {
-        var mh$ = LLVMAddAttributeAtIndex.HANDLE;
-        try {
-            if (TRACE_DOWNCALLS) {
-                traceDowncall("LLVMAddAttributeAtIndex", F, Idx, A);
-            }
-            mh$.invokeExact(F, Idx, A);
-        } catch (Throwable ex$) {
-           throw new AssertionError("should not reach here", ex$);
-        }
-    }
-
-    private static class LLVMGetAttributeCountAtIndex {
-        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            LLVM.C_INT,
-            LLVM.C_POINTER,
-            LLVM.C_INT
-        );
-
-        public static final MemorySegment ADDR = LLVM.findOrThrow("LLVMGetAttributeCountAtIndex");
-
-        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
-    }
-
-    /**
-     * Function descriptor for:
-     * {@snippet lang=c :
-     * unsigned int LLVMGetAttributeCountAtIndex(LLVMValueRef F, LLVMAttributeIndex Idx)
-     * }
-     */
-    public static FunctionDescriptor LLVMGetAttributeCountAtIndex$descriptor() {
-        return LLVMGetAttributeCountAtIndex.DESC;
-    }
-
-    /**
-     * Downcall method handle for:
-     * {@snippet lang=c :
-     * unsigned int LLVMGetAttributeCountAtIndex(LLVMValueRef F, LLVMAttributeIndex Idx)
-     * }
-     */
-    public static MethodHandle LLVMGetAttributeCountAtIndex$handle() {
-        return LLVMGetAttributeCountAtIndex.HANDLE;
-    }
-
-    /**
-     * Address for:
-     * {@snippet lang=c :
-     * unsigned int LLVMGetAttributeCountAtIndex(LLVMValueRef F, LLVMAttributeIndex Idx)
-     * }
-     */
-    public static MemorySegment LLVMGetAttributeCountAtIndex$address() {
-        return LLVMGetAttributeCountAtIndex.ADDR;
-    }
-
-    /**
-     * {@snippet lang=c :
-     * unsigned int LLVMGetAttributeCountAtIndex(LLVMValueRef F, LLVMAttributeIndex Idx)
-     * }
-     */
-    public static int LLVMGetAttributeCountAtIndex(MemorySegment F, int Idx) {
-        var mh$ = LLVMGetAttributeCountAtIndex.HANDLE;
-        try {
-            if (TRACE_DOWNCALLS) {
-                traceDowncall("LLVMGetAttributeCountAtIndex", F, Idx);
-            }
-            return (int)mh$.invokeExact(F, Idx);
-        } catch (Throwable ex$) {
-           throw new AssertionError("should not reach here", ex$);
-        }
-    }
-
-    private static class LLVMGetAttributesAtIndex {
-        public static final FunctionDescriptor DESC = FunctionDescriptor.ofVoid(
-            LLVM.C_POINTER,
-            LLVM.C_INT,
-            LLVM.C_POINTER
-        );
-
-        public static final MemorySegment ADDR = LLVM.findOrThrow("LLVMGetAttributesAtIndex");
-
-        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
-    }
-
-    /**
-     * Function descriptor for:
-     * {@snippet lang=c :
-     * void LLVMGetAttributesAtIndex(LLVMValueRef F, LLVMAttributeIndex Idx, LLVMAttributeRef *Attrs)
-     * }
-     */
-    public static FunctionDescriptor LLVMGetAttributesAtIndex$descriptor() {
-        return LLVMGetAttributesAtIndex.DESC;
-    }
-
-    /**
-     * Downcall method handle for:
-     * {@snippet lang=c :
-     * void LLVMGetAttributesAtIndex(LLVMValueRef F, LLVMAttributeIndex Idx, LLVMAttributeRef *Attrs)
-     * }
-     */
-    public static MethodHandle LLVMGetAttributesAtIndex$handle() {
-        return LLVMGetAttributesAtIndex.HANDLE;
-    }
-
-    /**
-     * Address for:
-     * {@snippet lang=c :
-     * void LLVMGetAttributesAtIndex(LLVMValueRef F, LLVMAttributeIndex Idx, LLVMAttributeRef *Attrs)
-     * }
-     */
-    public static MemorySegment LLVMGetAttributesAtIndex$address() {
-        return LLVMGetAttributesAtIndex.ADDR;
-    }
-
-    /**
-     * {@snippet lang=c :
-     * void LLVMGetAttributesAtIndex(LLVMValueRef F, LLVMAttributeIndex Idx, LLVMAttributeRef *Attrs)
-     * }
-     */
-    public static void LLVMGetAttributesAtIndex(MemorySegment F, int Idx, MemorySegment Attrs) {
-        var mh$ = LLVMGetAttributesAtIndex.HANDLE;
-        try {
-            if (TRACE_DOWNCALLS) {
-                traceDowncall("LLVMGetAttributesAtIndex", F, Idx, Attrs);
-            }
-            mh$.invokeExact(F, Idx, Attrs);
-        } catch (Throwable ex$) {
-           throw new AssertionError("should not reach here", ex$);
-        }
-    }
-
-    private static class LLVMGetEnumAttributeAtIndex {
-        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            LLVM.C_POINTER,
-            LLVM.C_POINTER,
-            LLVM.C_INT,
-            LLVM.C_INT
-        );
-
-        public static final MemorySegment ADDR = LLVM.findOrThrow("LLVMGetEnumAttributeAtIndex");
-
-        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
-    }
-
-    /**
-     * Function descriptor for:
-     * {@snippet lang=c :
-     * LLVMAttributeRef LLVMGetEnumAttributeAtIndex(LLVMValueRef F, LLVMAttributeIndex Idx, unsigned int KindID)
-     * }
-     */
-    public static FunctionDescriptor LLVMGetEnumAttributeAtIndex$descriptor() {
-        return LLVMGetEnumAttributeAtIndex.DESC;
-    }
-
-    /**
-     * Downcall method handle for:
-     * {@snippet lang=c :
-     * LLVMAttributeRef LLVMGetEnumAttributeAtIndex(LLVMValueRef F, LLVMAttributeIndex Idx, unsigned int KindID)
-     * }
-     */
-    public static MethodHandle LLVMGetEnumAttributeAtIndex$handle() {
-        return LLVMGetEnumAttributeAtIndex.HANDLE;
-    }
-
-    /**
-     * Address for:
-     * {@snippet lang=c :
-     * LLVMAttributeRef LLVMGetEnumAttributeAtIndex(LLVMValueRef F, LLVMAttributeIndex Idx, unsigned int KindID)
-     * }
-     */
-    public static MemorySegment LLVMGetEnumAttributeAtIndex$address() {
-        return LLVMGetEnumAttributeAtIndex.ADDR;
-    }
-
-    /**
-     * {@snippet lang=c :
-     * LLVMAttributeRef LLVMGetEnumAttributeAtIndex(LLVMValueRef F, LLVMAttributeIndex Idx, unsigned int KindID)
-     * }
-     */
-    public static MemorySegment LLVMGetEnumAttributeAtIndex(MemorySegment F, int Idx, int KindID) {
-        var mh$ = LLVMGetEnumAttributeAtIndex.HANDLE;
-        try {
-            if (TRACE_DOWNCALLS) {
-                traceDowncall("LLVMGetEnumAttributeAtIndex", F, Idx, KindID);
-            }
-            return (MemorySegment)mh$.invokeExact(F, Idx, KindID);
-        } catch (Throwable ex$) {
-           throw new AssertionError("should not reach here", ex$);
-        }
-    }
-
-    private static class LLVMGetStringAttributeAtIndex {
-        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            LLVM.C_POINTER,
-            LLVM.C_POINTER,
-            LLVM.C_INT,
-            LLVM.C_POINTER,
-            LLVM.C_INT
-        );
-
-        public static final MemorySegment ADDR = LLVM.findOrThrow("LLVMGetStringAttributeAtIndex");
-
-        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
-    }
-
-    /**
-     * Function descriptor for:
-     * {@snippet lang=c :
-     * LLVMAttributeRef LLVMGetStringAttributeAtIndex(LLVMValueRef F, LLVMAttributeIndex Idx, const char *K, unsigned int KLen)
-     * }
-     */
-    public static FunctionDescriptor LLVMGetStringAttributeAtIndex$descriptor() {
-        return LLVMGetStringAttributeAtIndex.DESC;
-    }
-
-    /**
-     * Downcall method handle for:
-     * {@snippet lang=c :
-     * LLVMAttributeRef LLVMGetStringAttributeAtIndex(LLVMValueRef F, LLVMAttributeIndex Idx, const char *K, unsigned int KLen)
-     * }
-     */
-    public static MethodHandle LLVMGetStringAttributeAtIndex$handle() {
-        return LLVMGetStringAttributeAtIndex.HANDLE;
-    }
-
-    /**
-     * Address for:
-     * {@snippet lang=c :
-     * LLVMAttributeRef LLVMGetStringAttributeAtIndex(LLVMValueRef F, LLVMAttributeIndex Idx, const char *K, unsigned int KLen)
-     * }
-     */
-    public static MemorySegment LLVMGetStringAttributeAtIndex$address() {
-        return LLVMGetStringAttributeAtIndex.ADDR;
-    }
-
-    /**
-     * {@snippet lang=c :
-     * LLVMAttributeRef LLVMGetStringAttributeAtIndex(LLVMValueRef F, LLVMAttributeIndex Idx, const char *K, unsigned int KLen)
-     * }
-     */
-    public static MemorySegment LLVMGetStringAttributeAtIndex(MemorySegment F, int Idx, MemorySegment K, int KLen) {
-        var mh$ = LLVMGetStringAttributeAtIndex.HANDLE;
-        try {
-            if (TRACE_DOWNCALLS) {
-                traceDowncall("LLVMGetStringAttributeAtIndex", F, Idx, K, KLen);
-            }
-            return (MemorySegment)mh$.invokeExact(F, Idx, K, KLen);
-        } catch (Throwable ex$) {
-           throw new AssertionError("should not reach here", ex$);
-        }
-    }
-
-    private static class LLVMRemoveEnumAttributeAtIndex {
-        public static final FunctionDescriptor DESC = FunctionDescriptor.ofVoid(
-            LLVM.C_POINTER,
-            LLVM.C_INT,
-            LLVM.C_INT
-        );
-
-        public static final MemorySegment ADDR = LLVM.findOrThrow("LLVMRemoveEnumAttributeAtIndex");
-
-        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
-    }
-
-    /**
-     * Function descriptor for:
-     * {@snippet lang=c :
-     * void LLVMRemoveEnumAttributeAtIndex(LLVMValueRef F, LLVMAttributeIndex Idx, unsigned int KindID)
-     * }
-     */
-    public static FunctionDescriptor LLVMRemoveEnumAttributeAtIndex$descriptor() {
-        return LLVMRemoveEnumAttributeAtIndex.DESC;
-    }
-
-    /**
-     * Downcall method handle for:
-     * {@snippet lang=c :
-     * void LLVMRemoveEnumAttributeAtIndex(LLVMValueRef F, LLVMAttributeIndex Idx, unsigned int KindID)
-     * }
-     */
-    public static MethodHandle LLVMRemoveEnumAttributeAtIndex$handle() {
-        return LLVMRemoveEnumAttributeAtIndex.HANDLE;
-    }
-
-    /**
-     * Address for:
-     * {@snippet lang=c :
-     * void LLVMRemoveEnumAttributeAtIndex(LLVMValueRef F, LLVMAttributeIndex Idx, unsigned int KindID)
-     * }
-     */
-    public static MemorySegment LLVMRemoveEnumAttributeAtIndex$address() {
-        return LLVMRemoveEnumAttributeAtIndex.ADDR;
-    }
-
-    /**
-     * {@snippet lang=c :
-     * void LLVMRemoveEnumAttributeAtIndex(LLVMValueRef F, LLVMAttributeIndex Idx, unsigned int KindID)
-     * }
-     */
-    public static void LLVMRemoveEnumAttributeAtIndex(MemorySegment F, int Idx, int KindID) {
-        var mh$ = LLVMRemoveEnumAttributeAtIndex.HANDLE;
-        try {
-            if (TRACE_DOWNCALLS) {
-                traceDowncall("LLVMRemoveEnumAttributeAtIndex", F, Idx, KindID);
-            }
-            mh$.invokeExact(F, Idx, KindID);
-        } catch (Throwable ex$) {
-           throw new AssertionError("should not reach here", ex$);
-        }
-    }
-
-    private static class LLVMRemoveStringAttributeAtIndex {
-        public static final FunctionDescriptor DESC = FunctionDescriptor.ofVoid(
-            LLVM.C_POINTER,
-            LLVM.C_INT,
-            LLVM.C_POINTER,
-            LLVM.C_INT
-        );
-
-        public static final MemorySegment ADDR = LLVM.findOrThrow("LLVMRemoveStringAttributeAtIndex");
-
-        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
-    }
-
-    /**
-     * Function descriptor for:
-     * {@snippet lang=c :
-     * void LLVMRemoveStringAttributeAtIndex(LLVMValueRef F, LLVMAttributeIndex Idx, const char *K, unsigned int KLen)
-     * }
-     */
-    public static FunctionDescriptor LLVMRemoveStringAttributeAtIndex$descriptor() {
-        return LLVMRemoveStringAttributeAtIndex.DESC;
-    }
-
-    /**
-     * Downcall method handle for:
-     * {@snippet lang=c :
-     * void LLVMRemoveStringAttributeAtIndex(LLVMValueRef F, LLVMAttributeIndex Idx, const char *K, unsigned int KLen)
-     * }
-     */
-    public static MethodHandle LLVMRemoveStringAttributeAtIndex$handle() {
-        return LLVMRemoveStringAttributeAtIndex.HANDLE;
-    }
-
-    /**
-     * Address for:
-     * {@snippet lang=c :
-     * void LLVMRemoveStringAttributeAtIndex(LLVMValueRef F, LLVMAttributeIndex Idx, const char *K, unsigned int KLen)
-     * }
-     */
-    public static MemorySegment LLVMRemoveStringAttributeAtIndex$address() {
-        return LLVMRemoveStringAttributeAtIndex.ADDR;
-    }
-
-    /**
-     * {@snippet lang=c :
-     * void LLVMRemoveStringAttributeAtIndex(LLVMValueRef F, LLVMAttributeIndex Idx, const char *K, unsigned int KLen)
-     * }
-     */
-    public static void LLVMRemoveStringAttributeAtIndex(MemorySegment F, int Idx, MemorySegment K, int KLen) {
-        var mh$ = LLVMRemoveStringAttributeAtIndex.HANDLE;
-        try {
-            if (TRACE_DOWNCALLS) {
-                traceDowncall("LLVMRemoveStringAttributeAtIndex", F, Idx, K, KLen);
-            }
-            mh$.invokeExact(F, Idx, K, KLen);
-        } catch (Throwable ex$) {
-           throw new AssertionError("should not reach here", ex$);
-        }
-    }
-
-    private static class LLVMAddTargetDependentFunctionAttr {
-        public static final FunctionDescriptor DESC = FunctionDescriptor.ofVoid(
-            LLVM.C_POINTER,
-            LLVM.C_POINTER,
-            LLVM.C_POINTER
-        );
-
-        public static final MemorySegment ADDR = LLVM.findOrThrow("LLVMAddTargetDependentFunctionAttr");
-
-        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
-    }
-
-    /**
-     * Function descriptor for:
-     * {@snippet lang=c :
-     * void LLVMAddTargetDependentFunctionAttr(LLVMValueRef Fn, const char *A, const char *V)
-     * }
-     */
-    public static FunctionDescriptor LLVMAddTargetDependentFunctionAttr$descriptor() {
-        return LLVMAddTargetDependentFunctionAttr.DESC;
-    }
-
-    /**
-     * Downcall method handle for:
-     * {@snippet lang=c :
-     * void LLVMAddTargetDependentFunctionAttr(LLVMValueRef Fn, const char *A, const char *V)
-     * }
-     */
-    public static MethodHandle LLVMAddTargetDependentFunctionAttr$handle() {
-        return LLVMAddTargetDependentFunctionAttr.HANDLE;
-    }
-
-    /**
-     * Address for:
-     * {@snippet lang=c :
-     * void LLVMAddTargetDependentFunctionAttr(LLVMValueRef Fn, const char *A, const char *V)
-     * }
-     */
-    public static MemorySegment LLVMAddTargetDependentFunctionAttr$address() {
-        return LLVMAddTargetDependentFunctionAttr.ADDR;
-    }
-
-    /**
-     * {@snippet lang=c :
-     * void LLVMAddTargetDependentFunctionAttr(LLVMValueRef Fn, const char *A, const char *V)
-     * }
-     */
-    public static void LLVMAddTargetDependentFunctionAttr(MemorySegment Fn, MemorySegment A, MemorySegment V) {
-        var mh$ = LLVMAddTargetDependentFunctionAttr.HANDLE;
-        try {
-            if (TRACE_DOWNCALLS) {
-                traceDowncall("LLVMAddTargetDependentFunctionAttr", Fn, A, V);
-            }
-            mh$.invokeExact(Fn, A, V);
-        } catch (Throwable ex$) {
-           throw new AssertionError("should not reach here", ex$);
-        }
-    }
-
-    private static class LLVMCountParams {
-        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            LLVM.C_INT,
-            LLVM.C_POINTER
-        );
-
-        public static final MemorySegment ADDR = LLVM.findOrThrow("LLVMCountParams");
-
-        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
-    }
-
-    /**
-     * Function descriptor for:
-     * {@snippet lang=c :
-     * unsigned int LLVMCountParams(LLVMValueRef Fn)
-     * }
-     */
-    public static FunctionDescriptor LLVMCountParams$descriptor() {
-        return LLVMCountParams.DESC;
-    }
-
-    /**
-     * Downcall method handle for:
-     * {@snippet lang=c :
-     * unsigned int LLVMCountParams(LLVMValueRef Fn)
-     * }
-     */
-    public static MethodHandle LLVMCountParams$handle() {
-        return LLVMCountParams.HANDLE;
-    }
-
-    /**
-     * Address for:
-     * {@snippet lang=c :
-     * unsigned int LLVMCountParams(LLVMValueRef Fn)
-     * }
-     */
-    public static MemorySegment LLVMCountParams$address() {
-        return LLVMCountParams.ADDR;
-    }
-
-    /**
-     * {@snippet lang=c :
-     * unsigned int LLVMCountParams(LLVMValueRef Fn)
-     * }
-     */
-    public static int LLVMCountParams(MemorySegment Fn) {
-        var mh$ = LLVMCountParams.HANDLE;
-        try {
-            if (TRACE_DOWNCALLS) {
-                traceDowncall("LLVMCountParams", Fn);
-            }
-            return (int)mh$.invokeExact(Fn);
-        } catch (Throwable ex$) {
-           throw new AssertionError("should not reach here", ex$);
-        }
-    }
-
-    private static class LLVMGetParams {
-        public static final FunctionDescriptor DESC = FunctionDescriptor.ofVoid(
-            LLVM.C_POINTER,
-            LLVM.C_POINTER
-        );
-
-        public static final MemorySegment ADDR = LLVM.findOrThrow("LLVMGetParams");
-
-        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
-    }
-
-    /**
-     * Function descriptor for:
-     * {@snippet lang=c :
-     * void LLVMGetParams(LLVMValueRef Fn, LLVMValueRef *Params)
-     * }
-     */
-    public static FunctionDescriptor LLVMGetParams$descriptor() {
-        return LLVMGetParams.DESC;
-    }
-
-    /**
-     * Downcall method handle for:
-     * {@snippet lang=c :
-     * void LLVMGetParams(LLVMValueRef Fn, LLVMValueRef *Params)
-     * }
-     */
-    public static MethodHandle LLVMGetParams$handle() {
-        return LLVMGetParams.HANDLE;
-    }
-
-    /**
-     * Address for:
-     * {@snippet lang=c :
-     * void LLVMGetParams(LLVMValueRef Fn, LLVMValueRef *Params)
-     * }
-     */
-    public static MemorySegment LLVMGetParams$address() {
-        return LLVMGetParams.ADDR;
-    }
-
-    /**
-     * {@snippet lang=c :
-     * void LLVMGetParams(LLVMValueRef Fn, LLVMValueRef *Params)
-     * }
-     */
-    public static void LLVMGetParams(MemorySegment Fn, MemorySegment Params) {
-        var mh$ = LLVMGetParams.HANDLE;
-        try {
-            if (TRACE_DOWNCALLS) {
-                traceDowncall("LLVMGetParams", Fn, Params);
-            }
-            mh$.invokeExact(Fn, Params);
-        } catch (Throwable ex$) {
-           throw new AssertionError("should not reach here", ex$);
-        }
-    }
-
-    private static class LLVMGetParam {
-        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            LLVM.C_POINTER,
-            LLVM.C_POINTER,
-            LLVM.C_INT
-        );
-
-        public static final MemorySegment ADDR = LLVM.findOrThrow("LLVMGetParam");
-
-        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
-    }
-
-    /**
-     * Function descriptor for:
-     * {@snippet lang=c :
-     * LLVMValueRef LLVMGetParam(LLVMValueRef Fn, unsigned int Index)
-     * }
-     */
-    public static FunctionDescriptor LLVMGetParam$descriptor() {
-        return LLVMGetParam.DESC;
-    }
-
-    /**
-     * Downcall method handle for:
-     * {@snippet lang=c :
-     * LLVMValueRef LLVMGetParam(LLVMValueRef Fn, unsigned int Index)
-     * }
-     */
-    public static MethodHandle LLVMGetParam$handle() {
-        return LLVMGetParam.HANDLE;
-    }
-
-    /**
-     * Address for:
-     * {@snippet lang=c :
-     * LLVMValueRef LLVMGetParam(LLVMValueRef Fn, unsigned int Index)
-     * }
-     */
-    public static MemorySegment LLVMGetParam$address() {
-        return LLVMGetParam.ADDR;
-    }
-
-    /**
-     * {@snippet lang=c :
-     * LLVMValueRef LLVMGetParam(LLVMValueRef Fn, unsigned int Index)
-     * }
-     */
-    public static MemorySegment LLVMGetParam(MemorySegment Fn, int Index) {
-        var mh$ = LLVMGetParam.HANDLE;
-        try {
-            if (TRACE_DOWNCALLS) {
-                traceDowncall("LLVMGetParam", Fn, Index);
-            }
-            return (MemorySegment)mh$.invokeExact(Fn, Index);
-        } catch (Throwable ex$) {
-           throw new AssertionError("should not reach here", ex$);
-        }
-    }
-
-    private static class LLVMGetParamParent {
-        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            LLVM.C_POINTER,
-            LLVM.C_POINTER
-        );
-
-        public static final MemorySegment ADDR = LLVM.findOrThrow("LLVMGetParamParent");
-
-        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
-    }
-
-    /**
-     * Function descriptor for:
-     * {@snippet lang=c :
-     * LLVMValueRef LLVMGetParamParent(LLVMValueRef Inst)
-     * }
-     */
-    public static FunctionDescriptor LLVMGetParamParent$descriptor() {
-        return LLVMGetParamParent.DESC;
-    }
-
-    /**
-     * Downcall method handle for:
-     * {@snippet lang=c :
-     * LLVMValueRef LLVMGetParamParent(LLVMValueRef Inst)
-     * }
-     */
-    public static MethodHandle LLVMGetParamParent$handle() {
-        return LLVMGetParamParent.HANDLE;
-    }
-
-    /**
-     * Address for:
-     * {@snippet lang=c :
-     * LLVMValueRef LLVMGetParamParent(LLVMValueRef Inst)
-     * }
-     */
-    public static MemorySegment LLVMGetParamParent$address() {
-        return LLVMGetParamParent.ADDR;
-    }
-
-    /**
-     * {@snippet lang=c :
-     * LLVMValueRef LLVMGetParamParent(LLVMValueRef Inst)
-     * }
-     */
-    public static MemorySegment LLVMGetParamParent(MemorySegment Inst) {
-        var mh$ = LLVMGetParamParent.HANDLE;
-        try {
-            if (TRACE_DOWNCALLS) {
-                traceDowncall("LLVMGetParamParent", Inst);
-            }
-            return (MemorySegment)mh$.invokeExact(Inst);
-        } catch (Throwable ex$) {
-           throw new AssertionError("should not reach here", ex$);
-        }
-    }
-
-    private static class LLVMGetFirstParam {
-        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            LLVM.C_POINTER,
-            LLVM.C_POINTER
-        );
-
-        public static final MemorySegment ADDR = LLVM.findOrThrow("LLVMGetFirstParam");
-
-        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
-    }
-
-    /**
-     * Function descriptor for:
-     * {@snippet lang=c :
-     * LLVMValueRef LLVMGetFirstParam(LLVMValueRef Fn)
-     * }
-     */
-    public static FunctionDescriptor LLVMGetFirstParam$descriptor() {
-        return LLVMGetFirstParam.DESC;
-    }
-
-    /**
-     * Downcall method handle for:
-     * {@snippet lang=c :
-     * LLVMValueRef LLVMGetFirstParam(LLVMValueRef Fn)
-     * }
-     */
-    public static MethodHandle LLVMGetFirstParam$handle() {
-        return LLVMGetFirstParam.HANDLE;
-    }
-
-    /**
-     * Address for:
-     * {@snippet lang=c :
-     * LLVMValueRef LLVMGetFirstParam(LLVMValueRef Fn)
-     * }
-     */
-    public static MemorySegment LLVMGetFirstParam$address() {
-        return LLVMGetFirstParam.ADDR;
-    }
-
-    /**
-     * {@snippet lang=c :
-     * LLVMValueRef LLVMGetFirstParam(LLVMValueRef Fn)
-     * }
-     */
-    public static MemorySegment LLVMGetFirstParam(MemorySegment Fn) {
-        var mh$ = LLVMGetFirstParam.HANDLE;
-        try {
-            if (TRACE_DOWNCALLS) {
-                traceDowncall("LLVMGetFirstParam", Fn);
-            }
-            return (MemorySegment)mh$.invokeExact(Fn);
-        } catch (Throwable ex$) {
-           throw new AssertionError("should not reach here", ex$);
-        }
-    }
-
-    private static class LLVMGetLastParam {
-        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            LLVM.C_POINTER,
-            LLVM.C_POINTER
-        );
-
-        public static final MemorySegment ADDR = LLVM.findOrThrow("LLVMGetLastParam");
-
-        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
-    }
-
-    /**
-     * Function descriptor for:
-     * {@snippet lang=c :
-     * LLVMValueRef LLVMGetLastParam(LLVMValueRef Fn)
-     * }
-     */
-    public static FunctionDescriptor LLVMGetLastParam$descriptor() {
-        return LLVMGetLastParam.DESC;
-    }
-
-    /**
-     * Downcall method handle for:
-     * {@snippet lang=c :
-     * LLVMValueRef LLVMGetLastParam(LLVMValueRef Fn)
-     * }
-     */
-    public static MethodHandle LLVMGetLastParam$handle() {
-        return LLVMGetLastParam.HANDLE;
-    }
-
-    /**
-     * Address for:
-     * {@snippet lang=c :
-     * LLVMValueRef LLVMGetLastParam(LLVMValueRef Fn)
-     * }
-     */
-    public static MemorySegment LLVMGetLastParam$address() {
-        return LLVMGetLastParam.ADDR;
-    }
-
-    /**
-     * {@snippet lang=c :
-     * LLVMValueRef LLVMGetLastParam(LLVMValueRef Fn)
-     * }
-     */
-    public static MemorySegment LLVMGetLastParam(MemorySegment Fn) {
-        var mh$ = LLVMGetLastParam.HANDLE;
-        try {
-            if (TRACE_DOWNCALLS) {
-                traceDowncall("LLVMGetLastParam", Fn);
-            }
-            return (MemorySegment)mh$.invokeExact(Fn);
-        } catch (Throwable ex$) {
-           throw new AssertionError("should not reach here", ex$);
-        }
-    }
-
-    private static class LLVMGetNextParam {
-        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            LLVM.C_POINTER,
-            LLVM.C_POINTER
-        );
-
-        public static final MemorySegment ADDR = LLVM.findOrThrow("LLVMGetNextParam");
-
-        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
-    }
-
-    /**
-     * Function descriptor for:
-     * {@snippet lang=c :
-     * LLVMValueRef LLVMGetNextParam(LLVMValueRef Arg)
-     * }
-     */
-    public static FunctionDescriptor LLVMGetNextParam$descriptor() {
-        return LLVMGetNextParam.DESC;
-    }
-
-    /**
-     * Downcall method handle for:
-     * {@snippet lang=c :
-     * LLVMValueRef LLVMGetNextParam(LLVMValueRef Arg)
-     * }
-     */
-    public static MethodHandle LLVMGetNextParam$handle() {
-        return LLVMGetNextParam.HANDLE;
-    }
-
-    /**
-     * Address for:
-     * {@snippet lang=c :
-     * LLVMValueRef LLVMGetNextParam(LLVMValueRef Arg)
-     * }
-     */
-    public static MemorySegment LLVMGetNextParam$address() {
-        return LLVMGetNextParam.ADDR;
-    }
-
-    /**
-     * {@snippet lang=c :
-     * LLVMValueRef LLVMGetNextParam(LLVMValueRef Arg)
-     * }
-     */
-    public static MemorySegment LLVMGetNextParam(MemorySegment Arg) {
-        var mh$ = LLVMGetNextParam.HANDLE;
-        try {
-            if (TRACE_DOWNCALLS) {
-                traceDowncall("LLVMGetNextParam", Arg);
-            }
-            return (MemorySegment)mh$.invokeExact(Arg);
-        } catch (Throwable ex$) {
-           throw new AssertionError("should not reach here", ex$);
-        }
-    }
-
-    private static class LLVMGetPreviousParam {
-        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            LLVM.C_POINTER,
-            LLVM.C_POINTER
-        );
-
-        public static final MemorySegment ADDR = LLVM.findOrThrow("LLVMGetPreviousParam");
-
-        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
-    }
-
-    /**
-     * Function descriptor for:
-     * {@snippet lang=c :
-     * LLVMValueRef LLVMGetPreviousParam(LLVMValueRef Arg)
-     * }
-     */
-    public static FunctionDescriptor LLVMGetPreviousParam$descriptor() {
-        return LLVMGetPreviousParam.DESC;
-    }
-
-    /**
-     * Downcall method handle for:
-     * {@snippet lang=c :
-     * LLVMValueRef LLVMGetPreviousParam(LLVMValueRef Arg)
-     * }
-     */
-    public static MethodHandle LLVMGetPreviousParam$handle() {
-        return LLVMGetPreviousParam.HANDLE;
-    }
-
-    /**
-     * Address for:
-     * {@snippet lang=c :
-     * LLVMValueRef LLVMGetPreviousParam(LLVMValueRef Arg)
-     * }
-     */
-    public static MemorySegment LLVMGetPreviousParam$address() {
-        return LLVMGetPreviousParam.ADDR;
-    }
-
-    /**
-     * {@snippet lang=c :
-     * LLVMValueRef LLVMGetPreviousParam(LLVMValueRef Arg)
-     * }
-     */
-    public static MemorySegment LLVMGetPreviousParam(MemorySegment Arg) {
-        var mh$ = LLVMGetPreviousParam.HANDLE;
-        try {
-            if (TRACE_DOWNCALLS) {
-                traceDowncall("LLVMGetPreviousParam", Arg);
-            }
-            return (MemorySegment)mh$.invokeExact(Arg);
-        } catch (Throwable ex$) {
-           throw new AssertionError("should not reach here", ex$);
-        }
-    }
-
-    private static class LLVMSetParamAlignment {
-        public static final FunctionDescriptor DESC = FunctionDescriptor.ofVoid(
-            LLVM.C_POINTER,
-            LLVM.C_INT
-        );
-
-        public static final MemorySegment ADDR = LLVM.findOrThrow("LLVMSetParamAlignment");
-
-        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
-    }
-
-    /**
-     * Function descriptor for:
-     * {@snippet lang=c :
-     * void LLVMSetParamAlignment(LLVMValueRef Arg, unsigned int Align)
-     * }
-     */
-    public static FunctionDescriptor LLVMSetParamAlignment$descriptor() {
-        return LLVMSetParamAlignment.DESC;
-    }
-
-    /**
-     * Downcall method handle for:
-     * {@snippet lang=c :
-     * void LLVMSetParamAlignment(LLVMValueRef Arg, unsigned int Align)
-     * }
-     */
-    public static MethodHandle LLVMSetParamAlignment$handle() {
-        return LLVMSetParamAlignment.HANDLE;
-    }
-
-    /**
-     * Address for:
-     * {@snippet lang=c :
-     * void LLVMSetParamAlignment(LLVMValueRef Arg, unsigned int Align)
-     * }
-     */
-    public static MemorySegment LLVMSetParamAlignment$address() {
-        return LLVMSetParamAlignment.ADDR;
-    }
-
-    /**
-     * {@snippet lang=c :
-     * void LLVMSetParamAlignment(LLVMValueRef Arg, unsigned int Align)
-     * }
-     */
-    public static void LLVMSetParamAlignment(MemorySegment Arg, int Align) {
-        var mh$ = LLVMSetParamAlignment.HANDLE;
-        try {
-            if (TRACE_DOWNCALLS) {
-                traceDowncall("LLVMSetParamAlignment", Arg, Align);
-            }
-            mh$.invokeExact(Arg, Align);
-        } catch (Throwable ex$) {
-           throw new AssertionError("should not reach here", ex$);
-        }
-    }
-
-    private static class LLVMAddGlobalIFunc {
-        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            LLVM.C_POINTER,
-            LLVM.C_POINTER,
-            LLVM.C_POINTER,
-            LLVM.C_LONG,
-            LLVM.C_POINTER,
-            LLVM.C_INT,
-            LLVM.C_POINTER
-        );
-
-        public static final MemorySegment ADDR = LLVM.findOrThrow("LLVMAddGlobalIFunc");
-
-        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
-    }
-
-    /**
-     * Function descriptor for:
-     * {@snippet lang=c :
-     * LLVMValueRef LLVMAddGlobalIFunc(LLVMModuleRef M, const char *Name, size_t NameLen, LLVMTypeRef Ty, unsigned int AddrSpace, LLVMValueRef Resolver)
-     * }
-     */
-    public static FunctionDescriptor LLVMAddGlobalIFunc$descriptor() {
-        return LLVMAddGlobalIFunc.DESC;
-    }
-
-    /**
-     * Downcall method handle for:
-     * {@snippet lang=c :
-     * LLVMValueRef LLVMAddGlobalIFunc(LLVMModuleRef M, const char *Name, size_t NameLen, LLVMTypeRef Ty, unsigned int AddrSpace, LLVMValueRef Resolver)
-     * }
-     */
-    public static MethodHandle LLVMAddGlobalIFunc$handle() {
-        return LLVMAddGlobalIFunc.HANDLE;
-    }
-
-    /**
-     * Address for:
-     * {@snippet lang=c :
-     * LLVMValueRef LLVMAddGlobalIFunc(LLVMModuleRef M, const char *Name, size_t NameLen, LLVMTypeRef Ty, unsigned int AddrSpace, LLVMValueRef Resolver)
-     * }
-     */
-    public static MemorySegment LLVMAddGlobalIFunc$address() {
-        return LLVMAddGlobalIFunc.ADDR;
-    }
-
-    /**
-     * {@snippet lang=c :
-     * LLVMValueRef LLVMAddGlobalIFunc(LLVMModuleRef M, const char *Name, size_t NameLen, LLVMTypeRef Ty, unsigned int AddrSpace, LLVMValueRef Resolver)
-     * }
-     */
-    public static MemorySegment LLVMAddGlobalIFunc(MemorySegment M, MemorySegment Name, long NameLen, MemorySegment Ty, int AddrSpace, MemorySegment Resolver) {
-        var mh$ = LLVMAddGlobalIFunc.HANDLE;
-        try {
-            if (TRACE_DOWNCALLS) {
-                traceDowncall("LLVMAddGlobalIFunc", M, Name, NameLen, Ty, AddrSpace, Resolver);
-            }
-            return (MemorySegment)mh$.invokeExact(M, Name, NameLen, Ty, AddrSpace, Resolver);
-        } catch (Throwable ex$) {
-           throw new AssertionError("should not reach here", ex$);
-        }
-    }
-
-    private static class LLVMGetNamedGlobalIFunc {
-        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            LLVM.C_POINTER,
-            LLVM.C_POINTER,
-            LLVM.C_POINTER,
-            LLVM.C_LONG
-        );
-
-        public static final MemorySegment ADDR = LLVM.findOrThrow("LLVMGetNamedGlobalIFunc");
-
-        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
-    }
-
-    /**
-     * Function descriptor for:
-     * {@snippet lang=c :
-     * LLVMValueRef LLVMGetNamedGlobalIFunc(LLVMModuleRef M, const char *Name, size_t NameLen)
-     * }
-     */
-    public static FunctionDescriptor LLVMGetNamedGlobalIFunc$descriptor() {
-        return LLVMGetNamedGlobalIFunc.DESC;
-    }
-
-    /**
-     * Downcall method handle for:
-     * {@snippet lang=c :
-     * LLVMValueRef LLVMGetNamedGlobalIFunc(LLVMModuleRef M, const char *Name, size_t NameLen)
-     * }
-     */
-    public static MethodHandle LLVMGetNamedGlobalIFunc$handle() {
-        return LLVMGetNamedGlobalIFunc.HANDLE;
-    }
-
-    /**
-     * Address for:
-     * {@snippet lang=c :
-     * LLVMValueRef LLVMGetNamedGlobalIFunc(LLVMModuleRef M, const char *Name, size_t NameLen)
-     * }
-     */
-    public static MemorySegment LLVMGetNamedGlobalIFunc$address() {
-        return LLVMGetNamedGlobalIFunc.ADDR;
-    }
-
-    /**
-     * {@snippet lang=c :
-     * LLVMValueRef LLVMGetNamedGlobalIFunc(LLVMModuleRef M, const char *Name, size_t NameLen)
-     * }
-     */
-    public static MemorySegment LLVMGetNamedGlobalIFunc(MemorySegment M, MemorySegment Name, long NameLen) {
-        var mh$ = LLVMGetNamedGlobalIFunc.HANDLE;
-        try {
-            if (TRACE_DOWNCALLS) {
-                traceDowncall("LLVMGetNamedGlobalIFunc", M, Name, NameLen);
-            }
-            return (MemorySegment)mh$.invokeExact(M, Name, NameLen);
-        } catch (Throwable ex$) {
-           throw new AssertionError("should not reach here", ex$);
-        }
-    }
-
-    private static class LLVMGetFirstGlobalIFunc {
-        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            LLVM.C_POINTER,
-            LLVM.C_POINTER
-        );
-
-        public static final MemorySegment ADDR = LLVM.findOrThrow("LLVMGetFirstGlobalIFunc");
-
-        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
-    }
-
-    /**
-     * Function descriptor for:
-     * {@snippet lang=c :
-     * LLVMValueRef LLVMGetFirstGlobalIFunc(LLVMModuleRef M)
-     * }
-     */
-    public static FunctionDescriptor LLVMGetFirstGlobalIFunc$descriptor() {
-        return LLVMGetFirstGlobalIFunc.DESC;
-    }
-
-    /**
-     * Downcall method handle for:
-     * {@snippet lang=c :
-     * LLVMValueRef LLVMGetFirstGlobalIFunc(LLVMModuleRef M)
-     * }
-     */
-    public static MethodHandle LLVMGetFirstGlobalIFunc$handle() {
-        return LLVMGetFirstGlobalIFunc.HANDLE;
-    }
-
-    /**
-     * Address for:
-     * {@snippet lang=c :
-     * LLVMValueRef LLVMGetFirstGlobalIFunc(LLVMModuleRef M)
-     * }
-     */
-    public static MemorySegment LLVMGetFirstGlobalIFunc$address() {
-        return LLVMGetFirstGlobalIFunc.ADDR;
-    }
-
-    /**
-     * {@snippet lang=c :
-     * LLVMValueRef LLVMGetFirstGlobalIFunc(LLVMModuleRef M)
-     * }
-     */
-    public static MemorySegment LLVMGetFirstGlobalIFunc(MemorySegment M) {
-        var mh$ = LLVMGetFirstGlobalIFunc.HANDLE;
-        try {
-            if (TRACE_DOWNCALLS) {
-                traceDowncall("LLVMGetFirstGlobalIFunc", M);
-            }
-            return (MemorySegment)mh$.invokeExact(M);
-        } catch (Throwable ex$) {
-           throw new AssertionError("should not reach here", ex$);
-        }
-    }
-
-    private static class LLVMGetLastGlobalIFunc {
-        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            LLVM.C_POINTER,
-            LLVM.C_POINTER
-        );
-
-        public static final MemorySegment ADDR = LLVM.findOrThrow("LLVMGetLastGlobalIFunc");
-
-        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
-    }
-
-    /**
-     * Function descriptor for:
-     * {@snippet lang=c :
-     * LLVMValueRef LLVMGetLastGlobalIFunc(LLVMModuleRef M)
-     * }
-     */
-    public static FunctionDescriptor LLVMGetLastGlobalIFunc$descriptor() {
-        return LLVMGetLastGlobalIFunc.DESC;
-    }
-
-    /**
-     * Downcall method handle for:
-     * {@snippet lang=c :
-     * LLVMValueRef LLVMGetLastGlobalIFunc(LLVMModuleRef M)
-     * }
-     */
-    public static MethodHandle LLVMGetLastGlobalIFunc$handle() {
-        return LLVMGetLastGlobalIFunc.HANDLE;
-    }
-
-    /**
-     * Address for:
-     * {@snippet lang=c :
-     * LLVMValueRef LLVMGetLastGlobalIFunc(LLVMModuleRef M)
-     * }
-     */
-    public static MemorySegment LLVMGetLastGlobalIFunc$address() {
-        return LLVMGetLastGlobalIFunc.ADDR;
-    }
-
-    /**
-     * {@snippet lang=c :
-     * LLVMValueRef LLVMGetLastGlobalIFunc(LLVMModuleRef M)
-     * }
-     */
-    public static MemorySegment LLVMGetLastGlobalIFunc(MemorySegment M) {
-        var mh$ = LLVMGetLastGlobalIFunc.HANDLE;
-        try {
-            if (TRACE_DOWNCALLS) {
-                traceDowncall("LLVMGetLastGlobalIFunc", M);
-            }
-            return (MemorySegment)mh$.invokeExact(M);
-        } catch (Throwable ex$) {
-           throw new AssertionError("should not reach here", ex$);
-        }
-    }
-
-    private static class LLVMGetNextGlobalIFunc {
-        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            LLVM.C_POINTER,
-            LLVM.C_POINTER
-        );
-
-        public static final MemorySegment ADDR = LLVM.findOrThrow("LLVMGetNextGlobalIFunc");
-
-        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
-    }
-
-    /**
-     * Function descriptor for:
-     * {@snippet lang=c :
-     * LLVMValueRef LLVMGetNextGlobalIFunc(LLVMValueRef IFunc)
-     * }
-     */
-    public static FunctionDescriptor LLVMGetNextGlobalIFunc$descriptor() {
-        return LLVMGetNextGlobalIFunc.DESC;
-    }
-
-    /**
-     * Downcall method handle for:
-     * {@snippet lang=c :
-     * LLVMValueRef LLVMGetNextGlobalIFunc(LLVMValueRef IFunc)
-     * }
-     */
-    public static MethodHandle LLVMGetNextGlobalIFunc$handle() {
-        return LLVMGetNextGlobalIFunc.HANDLE;
-    }
-
-    /**
-     * Address for:
-     * {@snippet lang=c :
-     * LLVMValueRef LLVMGetNextGlobalIFunc(LLVMValueRef IFunc)
-     * }
-     */
-    public static MemorySegment LLVMGetNextGlobalIFunc$address() {
-        return LLVMGetNextGlobalIFunc.ADDR;
-    }
-
-    /**
-     * {@snippet lang=c :
-     * LLVMValueRef LLVMGetNextGlobalIFunc(LLVMValueRef IFunc)
-     * }
-     */
-    public static MemorySegment LLVMGetNextGlobalIFunc(MemorySegment IFunc) {
-        var mh$ = LLVMGetNextGlobalIFunc.HANDLE;
-        try {
-            if (TRACE_DOWNCALLS) {
-                traceDowncall("LLVMGetNextGlobalIFunc", IFunc);
-            }
-            return (MemorySegment)mh$.invokeExact(IFunc);
-        } catch (Throwable ex$) {
-           throw new AssertionError("should not reach here", ex$);
-        }
-    }
-
-    private static class LLVMGetPreviousGlobalIFunc {
-        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            LLVM.C_POINTER,
-            LLVM.C_POINTER
-        );
-
-        public static final MemorySegment ADDR = LLVM.findOrThrow("LLVMGetPreviousGlobalIFunc");
-
-        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
-    }
-
-    /**
-     * Function descriptor for:
-     * {@snippet lang=c :
-     * LLVMValueRef LLVMGetPreviousGlobalIFunc(LLVMValueRef IFunc)
-     * }
-     */
-    public static FunctionDescriptor LLVMGetPreviousGlobalIFunc$descriptor() {
-        return LLVMGetPreviousGlobalIFunc.DESC;
-    }
-
-    /**
-     * Downcall method handle for:
-     * {@snippet lang=c :
-     * LLVMValueRef LLVMGetPreviousGlobalIFunc(LLVMValueRef IFunc)
-     * }
-     */
-    public static MethodHandle LLVMGetPreviousGlobalIFunc$handle() {
-        return LLVMGetPreviousGlobalIFunc.HANDLE;
-    }
-
-    /**
-     * Address for:
-     * {@snippet lang=c :
-     * LLVMValueRef LLVMGetPreviousGlobalIFunc(LLVMValueRef IFunc)
-     * }
-     */
-    public static MemorySegment LLVMGetPreviousGlobalIFunc$address() {
-        return LLVMGetPreviousGlobalIFunc.ADDR;
-    }
-
-    /**
-     * {@snippet lang=c :
-     * LLVMValueRef LLVMGetPreviousGlobalIFunc(LLVMValueRef IFunc)
-     * }
-     */
-    public static MemorySegment LLVMGetPreviousGlobalIFunc(MemorySegment IFunc) {
-        var mh$ = LLVMGetPreviousGlobalIFunc.HANDLE;
-        try {
-            if (TRACE_DOWNCALLS) {
-                traceDowncall("LLVMGetPreviousGlobalIFunc", IFunc);
-            }
-            return (MemorySegment)mh$.invokeExact(IFunc);
-        } catch (Throwable ex$) {
-           throw new AssertionError("should not reach here", ex$);
-        }
-    }
-
-    private static class LLVMGetGlobalIFuncResolver {
-        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            LLVM.C_POINTER,
-            LLVM.C_POINTER
-        );
-
-        public static final MemorySegment ADDR = LLVM.findOrThrow("LLVMGetGlobalIFuncResolver");
-
-        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
-    }
-
-    /**
-     * Function descriptor for:
-     * {@snippet lang=c :
-     * LLVMValueRef LLVMGetGlobalIFuncResolver(LLVMValueRef IFunc)
-     * }
-     */
-    public static FunctionDescriptor LLVMGetGlobalIFuncResolver$descriptor() {
-        return LLVMGetGlobalIFuncResolver.DESC;
-    }
-
-    /**
-     * Downcall method handle for:
-     * {@snippet lang=c :
-     * LLVMValueRef LLVMGetGlobalIFuncResolver(LLVMValueRef IFunc)
-     * }
-     */
-    public static MethodHandle LLVMGetGlobalIFuncResolver$handle() {
-        return LLVMGetGlobalIFuncResolver.HANDLE;
-    }
-
-    /**
-     * Address for:
-     * {@snippet lang=c :
-     * LLVMValueRef LLVMGetGlobalIFuncResolver(LLVMValueRef IFunc)
-     * }
-     */
-    public static MemorySegment LLVMGetGlobalIFuncResolver$address() {
-        return LLVMGetGlobalIFuncResolver.ADDR;
-    }
-
-    /**
-     * {@snippet lang=c :
-     * LLVMValueRef LLVMGetGlobalIFuncResolver(LLVMValueRef IFunc)
-     * }
-     */
-    public static MemorySegment LLVMGetGlobalIFuncResolver(MemorySegment IFunc) {
-        var mh$ = LLVMGetGlobalIFuncResolver.HANDLE;
-        try {
-            if (TRACE_DOWNCALLS) {
-                traceDowncall("LLVMGetGlobalIFuncResolver", IFunc);
-            }
-            return (MemorySegment)mh$.invokeExact(IFunc);
-        } catch (Throwable ex$) {
-           throw new AssertionError("should not reach here", ex$);
-        }
-    }
-
-    private static class LLVMSetGlobalIFuncResolver {
-        public static final FunctionDescriptor DESC = FunctionDescriptor.ofVoid(
-            LLVM.C_POINTER,
-            LLVM.C_POINTER
-        );
-
-        public static final MemorySegment ADDR = LLVM.findOrThrow("LLVMSetGlobalIFuncResolver");
-
-        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
-    }
-
-    /**
-     * Function descriptor for:
-     * {@snippet lang=c :
-     * void LLVMSetGlobalIFuncResolver(LLVMValueRef IFunc, LLVMValueRef Resolver)
-     * }
-     */
-    public static FunctionDescriptor LLVMSetGlobalIFuncResolver$descriptor() {
-        return LLVMSetGlobalIFuncResolver.DESC;
-    }
-
-    /**
-     * Downcall method handle for:
-     * {@snippet lang=c :
-     * void LLVMSetGlobalIFuncResolver(LLVMValueRef IFunc, LLVMValueRef Resolver)
-     * }
-     */
-    public static MethodHandle LLVMSetGlobalIFuncResolver$handle() {
-        return LLVMSetGlobalIFuncResolver.HANDLE;
-    }
-
-    /**
-     * Address for:
-     * {@snippet lang=c :
-     * void LLVMSetGlobalIFuncResolver(LLVMValueRef IFunc, LLVMValueRef Resolver)
-     * }
-     */
-    public static MemorySegment LLVMSetGlobalIFuncResolver$address() {
-        return LLVMSetGlobalIFuncResolver.ADDR;
-    }
-
-    /**
-     * {@snippet lang=c :
-     * void LLVMSetGlobalIFuncResolver(LLVMValueRef IFunc, LLVMValueRef Resolver)
-     * }
-     */
-    public static void LLVMSetGlobalIFuncResolver(MemorySegment IFunc, MemorySegment Resolver) {
-        var mh$ = LLVMSetGlobalIFuncResolver.HANDLE;
-        try {
-            if (TRACE_DOWNCALLS) {
-                traceDowncall("LLVMSetGlobalIFuncResolver", IFunc, Resolver);
-            }
-            mh$.invokeExact(IFunc, Resolver);
-        } catch (Throwable ex$) {
-           throw new AssertionError("should not reach here", ex$);
-        }
-    }
-
-    private static class LLVMEraseGlobalIFunc {
-        public static final FunctionDescriptor DESC = FunctionDescriptor.ofVoid(
-            LLVM.C_POINTER
-        );
-
-        public static final MemorySegment ADDR = LLVM.findOrThrow("LLVMEraseGlobalIFunc");
-
-        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
-    }
-
-    /**
-     * Function descriptor for:
-     * {@snippet lang=c :
-     * void LLVMEraseGlobalIFunc(LLVMValueRef IFunc)
-     * }
-     */
-    public static FunctionDescriptor LLVMEraseGlobalIFunc$descriptor() {
-        return LLVMEraseGlobalIFunc.DESC;
-    }
-
-    /**
-     * Downcall method handle for:
-     * {@snippet lang=c :
-     * void LLVMEraseGlobalIFunc(LLVMValueRef IFunc)
-     * }
-     */
-    public static MethodHandle LLVMEraseGlobalIFunc$handle() {
-        return LLVMEraseGlobalIFunc.HANDLE;
-    }
-
-    /**
-     * Address for:
-     * {@snippet lang=c :
-     * void LLVMEraseGlobalIFunc(LLVMValueRef IFunc)
-     * }
-     */
-    public static MemorySegment LLVMEraseGlobalIFunc$address() {
-        return LLVMEraseGlobalIFunc.ADDR;
-    }
-
-    /**
-     * {@snippet lang=c :
-     * void LLVMEraseGlobalIFunc(LLVMValueRef IFunc)
-     * }
-     */
-    public static void LLVMEraseGlobalIFunc(MemorySegment IFunc) {
-        var mh$ = LLVMEraseGlobalIFunc.HANDLE;
-        try {
-            if (TRACE_DOWNCALLS) {
-                traceDowncall("LLVMEraseGlobalIFunc", IFunc);
-            }
-            mh$.invokeExact(IFunc);
-        } catch (Throwable ex$) {
-           throw new AssertionError("should not reach here", ex$);
-        }
-    }
-
-    private static class LLVMRemoveGlobalIFunc {
-        public static final FunctionDescriptor DESC = FunctionDescriptor.ofVoid(
-            LLVM.C_POINTER
-        );
-
-        public static final MemorySegment ADDR = LLVM.findOrThrow("LLVMRemoveGlobalIFunc");
-
-        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
-    }
-
-    /**
-     * Function descriptor for:
-     * {@snippet lang=c :
-     * void LLVMRemoveGlobalIFunc(LLVMValueRef IFunc)
-     * }
-     */
-    public static FunctionDescriptor LLVMRemoveGlobalIFunc$descriptor() {
-        return LLVMRemoveGlobalIFunc.DESC;
-    }
-
-    /**
-     * Downcall method handle for:
-     * {@snippet lang=c :
-     * void LLVMRemoveGlobalIFunc(LLVMValueRef IFunc)
-     * }
-     */
-    public static MethodHandle LLVMRemoveGlobalIFunc$handle() {
-        return LLVMRemoveGlobalIFunc.HANDLE;
-    }
-
-    /**
-     * Address for:
-     * {@snippet lang=c :
-     * void LLVMRemoveGlobalIFunc(LLVMValueRef IFunc)
-     * }
-     */
-    public static MemorySegment LLVMRemoveGlobalIFunc$address() {
-        return LLVMRemoveGlobalIFunc.ADDR;
-    }
-
-    /**
-     * {@snippet lang=c :
-     * void LLVMRemoveGlobalIFunc(LLVMValueRef IFunc)
-     * }
-     */
-    public static void LLVMRemoveGlobalIFunc(MemorySegment IFunc) {
-        var mh$ = LLVMRemoveGlobalIFunc.HANDLE;
-        try {
-            if (TRACE_DOWNCALLS) {
-                traceDowncall("LLVMRemoveGlobalIFunc", IFunc);
-            }
-            mh$.invokeExact(IFunc);
-        } catch (Throwable ex$) {
-           throw new AssertionError("should not reach here", ex$);
-        }
-    }
-
-    private static class LLVMMDStringInContext2 {
-        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            LLVM.C_POINTER,
-            LLVM.C_POINTER,
-            LLVM.C_POINTER,
-            LLVM.C_LONG
-        );
-
-        public static final MemorySegment ADDR = LLVM.findOrThrow("LLVMMDStringInContext2");
-
-        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
-    }
-
-    /**
-     * Function descriptor for:
-     * {@snippet lang=c :
-     * LLVMMetadataRef LLVMMDStringInContext2(LLVMContextRef C, const char *Str, size_t SLen)
-     * }
-     */
-    public static FunctionDescriptor LLVMMDStringInContext2$descriptor() {
-        return LLVMMDStringInContext2.DESC;
-    }
-
-    /**
-     * Downcall method handle for:
-     * {@snippet lang=c :
-     * LLVMMetadataRef LLVMMDStringInContext2(LLVMContextRef C, const char *Str, size_t SLen)
-     * }
-     */
-    public static MethodHandle LLVMMDStringInContext2$handle() {
-        return LLVMMDStringInContext2.HANDLE;
-    }
-
-    /**
-     * Address for:
-     * {@snippet lang=c :
-     * LLVMMetadataRef LLVMMDStringInContext2(LLVMContextRef C, const char *Str, size_t SLen)
-     * }
-     */
-    public static MemorySegment LLVMMDStringInContext2$address() {
-        return LLVMMDStringInContext2.ADDR;
-    }
-
-    /**
-     * {@snippet lang=c :
-     * LLVMMetadataRef LLVMMDStringInContext2(LLVMContextRef C, const char *Str, size_t SLen)
-     * }
-     */
-    public static MemorySegment LLVMMDStringInContext2(MemorySegment C, MemorySegment Str, long SLen) {
-        var mh$ = LLVMMDStringInContext2.HANDLE;
-        try {
-            if (TRACE_DOWNCALLS) {
-                traceDowncall("LLVMMDStringInContext2", C, Str, SLen);
-            }
-            return (MemorySegment)mh$.invokeExact(C, Str, SLen);
-        } catch (Throwable ex$) {
-           throw new AssertionError("should not reach here", ex$);
-        }
-    }
-
-    private static class LLVMMDNodeInContext2 {
-        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            LLVM.C_POINTER,
-            LLVM.C_POINTER,
-            LLVM.C_POINTER,
-            LLVM.C_LONG
-        );
-
-        public static final MemorySegment ADDR = LLVM.findOrThrow("LLVMMDNodeInContext2");
-
-        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
-    }
-
-    /**
-     * Function descriptor for:
-     * {@snippet lang=c :
-     * LLVMMetadataRef LLVMMDNodeInContext2(LLVMContextRef C, LLVMMetadataRef *MDs, size_t Count)
-     * }
-     */
-    public static FunctionDescriptor LLVMMDNodeInContext2$descriptor() {
-        return LLVMMDNodeInContext2.DESC;
-    }
-
-    /**
-     * Downcall method handle for:
-     * {@snippet lang=c :
-     * LLVMMetadataRef LLVMMDNodeInContext2(LLVMContextRef C, LLVMMetadataRef *MDs, size_t Count)
-     * }
-     */
-    public static MethodHandle LLVMMDNodeInContext2$handle() {
-        return LLVMMDNodeInContext2.HANDLE;
-    }
-
-    /**
-     * Address for:
-     * {@snippet lang=c :
-     * LLVMMetadataRef LLVMMDNodeInContext2(LLVMContextRef C, LLVMMetadataRef *MDs, size_t Count)
-     * }
-     */
-    public static MemorySegment LLVMMDNodeInContext2$address() {
-        return LLVMMDNodeInContext2.ADDR;
-    }
-
-    /**
-     * {@snippet lang=c :
-     * LLVMMetadataRef LLVMMDNodeInContext2(LLVMContextRef C, LLVMMetadataRef *MDs, size_t Count)
-     * }
-     */
-    public static MemorySegment LLVMMDNodeInContext2(MemorySegment C, MemorySegment MDs, long Count) {
-        var mh$ = LLVMMDNodeInContext2.HANDLE;
-        try {
-            if (TRACE_DOWNCALLS) {
-                traceDowncall("LLVMMDNodeInContext2", C, MDs, Count);
-            }
-            return (MemorySegment)mh$.invokeExact(C, MDs, Count);
-        } catch (Throwable ex$) {
-           throw new AssertionError("should not reach here", ex$);
-        }
-    }
-
-    private static class LLVMMetadataAsValue {
-        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            LLVM.C_POINTER,
-            LLVM.C_POINTER,
-            LLVM.C_POINTER
-        );
-
-        public static final MemorySegment ADDR = LLVM.findOrThrow("LLVMMetadataAsValue");
-
-        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
-    }
-
-    /**
-     * Function descriptor for:
-     * {@snippet lang=c :
-     * LLVMValueRef LLVMMetadataAsValue(LLVMContextRef C, LLVMMetadataRef MD)
-     * }
-     */
-    public static FunctionDescriptor LLVMMetadataAsValue$descriptor() {
-        return LLVMMetadataAsValue.DESC;
-    }
-
-    /**
-     * Downcall method handle for:
-     * {@snippet lang=c :
-     * LLVMValueRef LLVMMetadataAsValue(LLVMContextRef C, LLVMMetadataRef MD)
-     * }
-     */
-    public static MethodHandle LLVMMetadataAsValue$handle() {
-        return LLVMMetadataAsValue.HANDLE;
-    }
-
-    /**
-     * Address for:
-     * {@snippet lang=c :
-     * LLVMValueRef LLVMMetadataAsValue(LLVMContextRef C, LLVMMetadataRef MD)
-     * }
-     */
-    public static MemorySegment LLVMMetadataAsValue$address() {
-        return LLVMMetadataAsValue.ADDR;
-    }
-
-    /**
-     * {@snippet lang=c :
-     * LLVMValueRef LLVMMetadataAsValue(LLVMContextRef C, LLVMMetadataRef MD)
-     * }
-     */
-    public static MemorySegment LLVMMetadataAsValue(MemorySegment C, MemorySegment MD) {
-        var mh$ = LLVMMetadataAsValue.HANDLE;
-        try {
-            if (TRACE_DOWNCALLS) {
-                traceDowncall("LLVMMetadataAsValue", C, MD);
-            }
-            return (MemorySegment)mh$.invokeExact(C, MD);
-        } catch (Throwable ex$) {
-           throw new AssertionError("should not reach here", ex$);
-        }
-    }
-
-    private static class LLVMValueAsMetadata {
-        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            LLVM.C_POINTER,
-            LLVM.C_POINTER
-        );
-
-        public static final MemorySegment ADDR = LLVM.findOrThrow("LLVMValueAsMetadata");
-
-        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
-    }
-
-    /**
-     * Function descriptor for:
-     * {@snippet lang=c :
-     * LLVMMetadataRef LLVMValueAsMetadata(LLVMValueRef Val)
-     * }
-     */
-    public static FunctionDescriptor LLVMValueAsMetadata$descriptor() {
-        return LLVMValueAsMetadata.DESC;
-    }
-
-    /**
-     * Downcall method handle for:
-     * {@snippet lang=c :
-     * LLVMMetadataRef LLVMValueAsMetadata(LLVMValueRef Val)
-     * }
-     */
-    public static MethodHandle LLVMValueAsMetadata$handle() {
-        return LLVMValueAsMetadata.HANDLE;
-    }
-
-    /**
-     * Address for:
-     * {@snippet lang=c :
-     * LLVMMetadataRef LLVMValueAsMetadata(LLVMValueRef Val)
-     * }
-     */
-    public static MemorySegment LLVMValueAsMetadata$address() {
-        return LLVMValueAsMetadata.ADDR;
-    }
-
-    /**
-     * {@snippet lang=c :
-     * LLVMMetadataRef LLVMValueAsMetadata(LLVMValueRef Val)
-     * }
-     */
-    public static MemorySegment LLVMValueAsMetadata(MemorySegment Val) {
-        var mh$ = LLVMValueAsMetadata.HANDLE;
-        try {
-            if (TRACE_DOWNCALLS) {
-                traceDowncall("LLVMValueAsMetadata", Val);
-            }
-            return (MemorySegment)mh$.invokeExact(Val);
-        } catch (Throwable ex$) {
-           throw new AssertionError("should not reach here", ex$);
-        }
-    }
-
-    private static class LLVMGetMDString {
-        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            LLVM.C_POINTER,
-            LLVM.C_POINTER,
-            LLVM.C_POINTER
-        );
-
-        public static final MemorySegment ADDR = LLVM.findOrThrow("LLVMGetMDString");
-
-        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
-    }
-
-    /**
-     * Function descriptor for:
-     * {@snippet lang=c :
-     * const char *LLVMGetMDString(LLVMValueRef V, unsigned int *Length)
-     * }
-     */
-    public static FunctionDescriptor LLVMGetMDString$descriptor() {
-        return LLVMGetMDString.DESC;
-    }
-
-    /**
-     * Downcall method handle for:
-     * {@snippet lang=c :
-     * const char *LLVMGetMDString(LLVMValueRef V, unsigned int *Length)
-     * }
-     */
-    public static MethodHandle LLVMGetMDString$handle() {
-        return LLVMGetMDString.HANDLE;
-    }
-
-    /**
-     * Address for:
-     * {@snippet lang=c :
-     * const char *LLVMGetMDString(LLVMValueRef V, unsigned int *Length)
-     * }
-     */
-    public static MemorySegment LLVMGetMDString$address() {
-        return LLVMGetMDString.ADDR;
-    }
-
-    /**
-     * {@snippet lang=c :
-     * const char *LLVMGetMDString(LLVMValueRef V, unsigned int *Length)
-     * }
-     */
-    public static MemorySegment LLVMGetMDString(MemorySegment V, MemorySegment Length) {
-        var mh$ = LLVMGetMDString.HANDLE;
-        try {
-            if (TRACE_DOWNCALLS) {
-                traceDowncall("LLVMGetMDString", V, Length);
-            }
-            return (MemorySegment)mh$.invokeExact(V, Length);
-        } catch (Throwable ex$) {
-           throw new AssertionError("should not reach here", ex$);
-        }
-    }
-
-    private static class LLVMGetMDNodeNumOperands {
-        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            LLVM.C_INT,
-            LLVM.C_POINTER
-        );
-
-        public static final MemorySegment ADDR = LLVM.findOrThrow("LLVMGetMDNodeNumOperands");
-
-        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
-    }
-
-    /**
-     * Function descriptor for:
-     * {@snippet lang=c :
-     * unsigned int LLVMGetMDNodeNumOperands(LLVMValueRef V)
-     * }
-     */
-    public static FunctionDescriptor LLVMGetMDNodeNumOperands$descriptor() {
-        return LLVMGetMDNodeNumOperands.DESC;
-    }
-
-    /**
-     * Downcall method handle for:
-     * {@snippet lang=c :
-     * unsigned int LLVMGetMDNodeNumOperands(LLVMValueRef V)
-     * }
-     */
-    public static MethodHandle LLVMGetMDNodeNumOperands$handle() {
-        return LLVMGetMDNodeNumOperands.HANDLE;
-    }
-
-    /**
-     * Address for:
-     * {@snippet lang=c :
-     * unsigned int LLVMGetMDNodeNumOperands(LLVMValueRef V)
-     * }
-     */
-    public static MemorySegment LLVMGetMDNodeNumOperands$address() {
-        return LLVMGetMDNodeNumOperands.ADDR;
-    }
-
-    /**
-     * {@snippet lang=c :
-     * unsigned int LLVMGetMDNodeNumOperands(LLVMValueRef V)
-     * }
-     */
-    public static int LLVMGetMDNodeNumOperands(MemorySegment V) {
-        var mh$ = LLVMGetMDNodeNumOperands.HANDLE;
-        try {
-            if (TRACE_DOWNCALLS) {
-                traceDowncall("LLVMGetMDNodeNumOperands", V);
-            }
-            return (int)mh$.invokeExact(V);
-        } catch (Throwable ex$) {
-           throw new AssertionError("should not reach here", ex$);
-        }
-    }
-
-    private static class LLVMGetMDNodeOperands {
-        public static final FunctionDescriptor DESC = FunctionDescriptor.ofVoid(
-            LLVM.C_POINTER,
-            LLVM.C_POINTER
-        );
-
-        public static final MemorySegment ADDR = LLVM.findOrThrow("LLVMGetMDNodeOperands");
-
-        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
-    }
-
-    /**
-     * Function descriptor for:
-     * {@snippet lang=c :
-     * void LLVMGetMDNodeOperands(LLVMValueRef V, LLVMValueRef *Dest)
-     * }
-     */
-    public static FunctionDescriptor LLVMGetMDNodeOperands$descriptor() {
-        return LLVMGetMDNodeOperands.DESC;
-    }
-
-    /**
-     * Downcall method handle for:
-     * {@snippet lang=c :
-     * void LLVMGetMDNodeOperands(LLVMValueRef V, LLVMValueRef *Dest)
-     * }
-     */
-    public static MethodHandle LLVMGetMDNodeOperands$handle() {
-        return LLVMGetMDNodeOperands.HANDLE;
-    }
-
-    /**
-     * Address for:
-     * {@snippet lang=c :
-     * void LLVMGetMDNodeOperands(LLVMValueRef V, LLVMValueRef *Dest)
-     * }
-     */
-    public static MemorySegment LLVMGetMDNodeOperands$address() {
-        return LLVMGetMDNodeOperands.ADDR;
-    }
-
-    /**
-     * {@snippet lang=c :
-     * void LLVMGetMDNodeOperands(LLVMValueRef V, LLVMValueRef *Dest)
-     * }
-     */
-    public static void LLVMGetMDNodeOperands(MemorySegment V, MemorySegment Dest) {
-        var mh$ = LLVMGetMDNodeOperands.HANDLE;
-        try {
-            if (TRACE_DOWNCALLS) {
-                traceDowncall("LLVMGetMDNodeOperands", V, Dest);
-            }
-            mh$.invokeExact(V, Dest);
-        } catch (Throwable ex$) {
-           throw new AssertionError("should not reach here", ex$);
-        }
-    }
-
-    private static class LLVMReplaceMDNodeOperandWith {
-        public static final FunctionDescriptor DESC = FunctionDescriptor.ofVoid(
-            LLVM.C_POINTER,
-            LLVM.C_INT,
-            LLVM.C_POINTER
-        );
-
-        public static final MemorySegment ADDR = LLVM.findOrThrow("LLVMReplaceMDNodeOperandWith");
-
-        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
-    }
-
-    /**
-     * Function descriptor for:
-     * {@snippet lang=c :
-     * void LLVMReplaceMDNodeOperandWith(LLVMValueRef V, unsigned int Index, LLVMMetadataRef Replacement)
-     * }
-     */
-    public static FunctionDescriptor LLVMReplaceMDNodeOperandWith$descriptor() {
-        return LLVMReplaceMDNodeOperandWith.DESC;
-    }
-
-    /**
-     * Downcall method handle for:
-     * {@snippet lang=c :
-     * void LLVMReplaceMDNodeOperandWith(LLVMValueRef V, unsigned int Index, LLVMMetadataRef Replacement)
-     * }
-     */
-    public static MethodHandle LLVMReplaceMDNodeOperandWith$handle() {
-        return LLVMReplaceMDNodeOperandWith.HANDLE;
-    }
-
-    /**
-     * Address for:
-     * {@snippet lang=c :
-     * void LLVMReplaceMDNodeOperandWith(LLVMValueRef V, unsigned int Index, LLVMMetadataRef Replacement)
-     * }
-     */
-    public static MemorySegment LLVMReplaceMDNodeOperandWith$address() {
-        return LLVMReplaceMDNodeOperandWith.ADDR;
-    }
-
-    /**
-     * {@snippet lang=c :
-     * void LLVMReplaceMDNodeOperandWith(LLVMValueRef V, unsigned int Index, LLVMMetadataRef Replacement)
-     * }
-     */
-    public static void LLVMReplaceMDNodeOperandWith(MemorySegment V, int Index, MemorySegment Replacement) {
-        var mh$ = LLVMReplaceMDNodeOperandWith.HANDLE;
-        try {
-            if (TRACE_DOWNCALLS) {
-                traceDowncall("LLVMReplaceMDNodeOperandWith", V, Index, Replacement);
-            }
-            mh$.invokeExact(V, Index, Replacement);
-        } catch (Throwable ex$) {
-           throw new AssertionError("should not reach here", ex$);
-        }
-    }
-
-    private static class LLVMMDStringInContext {
-        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            LLVM.C_POINTER,
-            LLVM.C_POINTER,
-            LLVM.C_POINTER,
-            LLVM.C_INT
-        );
-
-        public static final MemorySegment ADDR = LLVM.findOrThrow("LLVMMDStringInContext");
-
-        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
-    }
-
-    /**
-     * Function descriptor for:
-     * {@snippet lang=c :
-     * LLVMValueRef LLVMMDStringInContext(LLVMContextRef C, const char *Str, unsigned int SLen)
-     * }
-     */
-    public static FunctionDescriptor LLVMMDStringInContext$descriptor() {
-        return LLVMMDStringInContext.DESC;
-    }
-
-    /**
-     * Downcall method handle for:
-     * {@snippet lang=c :
-     * LLVMValueRef LLVMMDStringInContext(LLVMContextRef C, const char *Str, unsigned int SLen)
-     * }
-     */
-    public static MethodHandle LLVMMDStringInContext$handle() {
-        return LLVMMDStringInContext.HANDLE;
-    }
-
-    /**
-     * Address for:
-     * {@snippet lang=c :
-     * LLVMValueRef LLVMMDStringInContext(LLVMContextRef C, const char *Str, unsigned int SLen)
-     * }
-     */
-    public static MemorySegment LLVMMDStringInContext$address() {
-        return LLVMMDStringInContext.ADDR;
-    }
-
-    /**
-     * {@snippet lang=c :
-     * LLVMValueRef LLVMMDStringInContext(LLVMContextRef C, const char *Str, unsigned int SLen)
-     * }
-     */
-    public static MemorySegment LLVMMDStringInContext(MemorySegment C, MemorySegment Str, int SLen) {
-        var mh$ = LLVMMDStringInContext.HANDLE;
-        try {
-            if (TRACE_DOWNCALLS) {
-                traceDowncall("LLVMMDStringInContext", C, Str, SLen);
-            }
-            return (MemorySegment)mh$.invokeExact(C, Str, SLen);
-        } catch (Throwable ex$) {
-           throw new AssertionError("should not reach here", ex$);
-        }
-    }
-
-    private static class LLVMMDString {
-        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            LLVM.C_POINTER,
-            LLVM.C_POINTER,
-            LLVM.C_INT
-        );
-
-        public static final MemorySegment ADDR = LLVM.findOrThrow("LLVMMDString");
-
-        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
-    }
-
-    /**
-     * Function descriptor for:
-     * {@snippet lang=c :
-     * LLVMValueRef LLVMMDString(const char *Str, unsigned int SLen)
-     * }
-     */
-    public static FunctionDescriptor LLVMMDString$descriptor() {
-        return LLVMMDString.DESC;
-    }
-
-    /**
-     * Downcall method handle for:
-     * {@snippet lang=c :
-     * LLVMValueRef LLVMMDString(const char *Str, unsigned int SLen)
-     * }
-     */
-    public static MethodHandle LLVMMDString$handle() {
-        return LLVMMDString.HANDLE;
-    }
-
-    /**
-     * Address for:
-     * {@snippet lang=c :
-     * LLVMValueRef LLVMMDString(const char *Str, unsigned int SLen)
-     * }
-     */
-    public static MemorySegment LLVMMDString$address() {
-        return LLVMMDString.ADDR;
-    }
-
-    /**
-     * {@snippet lang=c :
-     * LLVMValueRef LLVMMDString(const char *Str, unsigned int SLen)
-     * }
-     */
-    public static MemorySegment LLVMMDString(MemorySegment Str, int SLen) {
-        var mh$ = LLVMMDString.HANDLE;
-        try {
-            if (TRACE_DOWNCALLS) {
-                traceDowncall("LLVMMDString", Str, SLen);
-            }
-            return (MemorySegment)mh$.invokeExact(Str, SLen);
-        } catch (Throwable ex$) {
-           throw new AssertionError("should not reach here", ex$);
-        }
-    }
-
-    private static class LLVMMDNodeInContext {
-        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            LLVM.C_POINTER,
-            LLVM.C_POINTER,
-            LLVM.C_POINTER,
-            LLVM.C_INT
-        );
-
-        public static final MemorySegment ADDR = LLVM.findOrThrow("LLVMMDNodeInContext");
-
-        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
-    }
-
-    /**
-     * Function descriptor for:
-     * {@snippet lang=c :
-     * LLVMValueRef LLVMMDNodeInContext(LLVMContextRef C, LLVMValueRef *Vals, unsigned int Count)
-     * }
-     */
-    public static FunctionDescriptor LLVMMDNodeInContext$descriptor() {
-        return LLVMMDNodeInContext.DESC;
-    }
-
-    /**
-     * Downcall method handle for:
-     * {@snippet lang=c :
-     * LLVMValueRef LLVMMDNodeInContext(LLVMContextRef C, LLVMValueRef *Vals, unsigned int Count)
-     * }
-     */
-    public static MethodHandle LLVMMDNodeInContext$handle() {
-        return LLVMMDNodeInContext.HANDLE;
-    }
-
-    /**
-     * Address for:
-     * {@snippet lang=c :
-     * LLVMValueRef LLVMMDNodeInContext(LLVMContextRef C, LLVMValueRef *Vals, unsigned int Count)
-     * }
-     */
-    public static MemorySegment LLVMMDNodeInContext$address() {
-        return LLVMMDNodeInContext.ADDR;
-    }
-
-    /**
-     * {@snippet lang=c :
-     * LLVMValueRef LLVMMDNodeInContext(LLVMContextRef C, LLVMValueRef *Vals, unsigned int Count)
-     * }
-     */
-    public static MemorySegment LLVMMDNodeInContext(MemorySegment C, MemorySegment Vals, int Count) {
-        var mh$ = LLVMMDNodeInContext.HANDLE;
-        try {
-            if (TRACE_DOWNCALLS) {
-                traceDowncall("LLVMMDNodeInContext", C, Vals, Count);
-            }
-            return (MemorySegment)mh$.invokeExact(C, Vals, Count);
-        } catch (Throwable ex$) {
-           throw new AssertionError("should not reach here", ex$);
-        }
-    }
-
-    private static class LLVMMDNode {
-        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            LLVM.C_POINTER,
-            LLVM.C_POINTER,
-            LLVM.C_INT
-        );
-
-        public static final MemorySegment ADDR = LLVM.findOrThrow("LLVMMDNode");
-
-        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
-    }
-
-    /**
-     * Function descriptor for:
-     * {@snippet lang=c :
-     * LLVMValueRef LLVMMDNode(LLVMValueRef *Vals, unsigned int Count)
-     * }
-     */
-    public static FunctionDescriptor LLVMMDNode$descriptor() {
-        return LLVMMDNode.DESC;
-    }
-
-    /**
-     * Downcall method handle for:
-     * {@snippet lang=c :
-     * LLVMValueRef LLVMMDNode(LLVMValueRef *Vals, unsigned int Count)
-     * }
-     */
-    public static MethodHandle LLVMMDNode$handle() {
-        return LLVMMDNode.HANDLE;
-    }
-
-    /**
-     * Address for:
-     * {@snippet lang=c :
-     * LLVMValueRef LLVMMDNode(LLVMValueRef *Vals, unsigned int Count)
-     * }
-     */
-    public static MemorySegment LLVMMDNode$address() {
-        return LLVMMDNode.ADDR;
-    }
-
-    /**
-     * {@snippet lang=c :
-     * LLVMValueRef LLVMMDNode(LLVMValueRef *Vals, unsigned int Count)
-     * }
-     */
-    public static MemorySegment LLVMMDNode(MemorySegment Vals, int Count) {
-        var mh$ = LLVMMDNode.HANDLE;
-        try {
-            if (TRACE_DOWNCALLS) {
-                traceDowncall("LLVMMDNode", Vals, Count);
-            }
-            return (MemorySegment)mh$.invokeExact(Vals, Count);
-        } catch (Throwable ex$) {
-           throw new AssertionError("should not reach here", ex$);
-        }
-    }
-
-    private static class LLVMCreateOperandBundle {
-        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            LLVM.C_POINTER,
-            LLVM.C_POINTER,
-            LLVM.C_LONG,
-            LLVM.C_POINTER,
-            LLVM.C_INT
-        );
-
-        public static final MemorySegment ADDR = LLVM.findOrThrow("LLVMCreateOperandBundle");
-
-        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
-    }
-
-    /**
-     * Function descriptor for:
-     * {@snippet lang=c :
-     * LLVMOperandBundleRef LLVMCreateOperandBundle(const char *Tag, size_t TagLen, LLVMValueRef *Args, unsigned int NumArgs)
-     * }
-     */
-    public static FunctionDescriptor LLVMCreateOperandBundle$descriptor() {
-        return LLVMCreateOperandBundle.DESC;
-    }
-
-    /**
-     * Downcall method handle for:
-     * {@snippet lang=c :
-     * LLVMOperandBundleRef LLVMCreateOperandBundle(const char *Tag, size_t TagLen, LLVMValueRef *Args, unsigned int NumArgs)
-     * }
-     */
-    public static MethodHandle LLVMCreateOperandBundle$handle() {
-        return LLVMCreateOperandBundle.HANDLE;
-    }
-
-    /**
-     * Address for:
-     * {@snippet lang=c :
-     * LLVMOperandBundleRef LLVMCreateOperandBundle(const char *Tag, size_t TagLen, LLVMValueRef *Args, unsigned int NumArgs)
-     * }
-     */
-    public static MemorySegment LLVMCreateOperandBundle$address() {
-        return LLVMCreateOperandBundle.ADDR;
-    }
-
-    /**
-     * {@snippet lang=c :
-     * LLVMOperandBundleRef LLVMCreateOperandBundle(const char *Tag, size_t TagLen, LLVMValueRef *Args, unsigned int NumArgs)
-     * }
-     */
-    public static MemorySegment LLVMCreateOperandBundle(MemorySegment Tag, long TagLen, MemorySegment Args, int NumArgs) {
-        var mh$ = LLVMCreateOperandBundle.HANDLE;
-        try {
-            if (TRACE_DOWNCALLS) {
-                traceDowncall("LLVMCreateOperandBundle", Tag, TagLen, Args, NumArgs);
-            }
-            return (MemorySegment)mh$.invokeExact(Tag, TagLen, Args, NumArgs);
-        } catch (Throwable ex$) {
-           throw new AssertionError("should not reach here", ex$);
-        }
-    }
-
-    private static class LLVMDisposeOperandBundle {
-        public static final FunctionDescriptor DESC = FunctionDescriptor.ofVoid(
-            LLVM.C_POINTER
-        );
-
-        public static final MemorySegment ADDR = LLVM.findOrThrow("LLVMDisposeOperandBundle");
-
-        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
-    }
-
-    /**
-     * Function descriptor for:
-     * {@snippet lang=c :
-     * void LLVMDisposeOperandBundle(LLVMOperandBundleRef Bundle)
-     * }
-     */
-    public static FunctionDescriptor LLVMDisposeOperandBundle$descriptor() {
-        return LLVMDisposeOperandBundle.DESC;
-    }
-
-    /**
-     * Downcall method handle for:
-     * {@snippet lang=c :
-     * void LLVMDisposeOperandBundle(LLVMOperandBundleRef Bundle)
-     * }
-     */
-    public static MethodHandle LLVMDisposeOperandBundle$handle() {
-        return LLVMDisposeOperandBundle.HANDLE;
-    }
-
-    /**
-     * Address for:
-     * {@snippet lang=c :
-     * void LLVMDisposeOperandBundle(LLVMOperandBundleRef Bundle)
-     * }
-     */
-    public static MemorySegment LLVMDisposeOperandBundle$address() {
-        return LLVMDisposeOperandBundle.ADDR;
-    }
-
-    /**
-     * {@snippet lang=c :
-     * void LLVMDisposeOperandBundle(LLVMOperandBundleRef Bundle)
-     * }
-     */
-    public static void LLVMDisposeOperandBundle(MemorySegment Bundle) {
-        var mh$ = LLVMDisposeOperandBundle.HANDLE;
-        try {
-            if (TRACE_DOWNCALLS) {
-                traceDowncall("LLVMDisposeOperandBundle", Bundle);
-            }
-            mh$.invokeExact(Bundle);
         } catch (Throwable ex$) {
            throw new AssertionError("should not reach here", ex$);
         }
